@@ -1,12 +1,14 @@
+import avatar from '../assets/avatar.png'
+
 export default function Intro() {
 	return (
 		<section className='home'>
 			{/* Avatar */}
 			<section className='headline load-hidden flex mb-16'>
-				<img className='avatar border rounded-full mr-6' src='./images/avatar.png' alt="Amanda's Avatar" />
+				<img className='avatar border rounded-full mr-6' src={avatar} alt="Amanda's Avatar" />
 				<div className='self-center'>
 					<h1 className='font-semibold text-4xl'>Amanda</h1>
-					<h2 className='text-sm leading-6 font-light'>Mendix Developer</h2>
+					<h2 className='text-sm leading-6 font-light'>Full Stack Developer</h2>
 				</div>
 			</section>
 

@@ -50,11 +50,6 @@ form textarea {
     color        : #141211;
 }
 
-#work,
-#contact {
-    padding-top: 6rem;
-}
-
 .contact-icon,
 .link-icon {
     background: var(--btn-bg-gradient);
