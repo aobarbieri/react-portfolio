@@ -1,11 +1,17 @@
 
+import mixItUp from '../assets/mix-it-up-mock.png'
+import studiOn from '../assets/studion-mock.png'
+import allMetro from '../assets/all-metro-mock.png'
+import flickbase from '../assets/flickbase-mock.png'
+import quoteGenerator from '../assets/quote-mock.png'
+
 export default function Work() {
     return (
 		<article className='container'>
 			<article>
 				<section className='headline load-hidden pb-12 font-bold'>
 					<h1 className='text-2xl pb-4'>Work</h1>
-					<h2 className='text-4xl'>A Selection Of Stuff I`&apos;`ve Built</h2>
+					<h2 className='text-4xl'>A Selection Of Stuff I've Built</h2>
 				</section>
 
 				{/* Mix It Up */}
@@ -29,7 +35,7 @@ export default function Work() {
 							</a>
 						</div>
 					</div>
-					<img className='mocks mt-9 lg:mt-0' src='./images/mix-it-up-mock.png' alt='Mix It Up project avatar' />
+					<img className='mocks mt-9 lg:mt-0' src={mixItUp} alt='Mix It Up project' />
 				</section>
 
 				{/* StudiOn */}
@@ -59,7 +65,7 @@ export default function Work() {
 							</a>
 						</div>
 					</div>
-					<img className='mocks lg:order-first mt-9 lg:mt-0' src='./images/studion-mock.png' alt='studion events project' />
+					<img className='mocks lg:order-first mt-9 lg:mt-0' src={studiOn} alt='studion events project' />
 				</section>
 
 				{/* All Metro */}
@@ -85,7 +91,7 @@ export default function Work() {
 							</a>
 						</div>
 					</div>
-					<img className='mocks mt-9 lg:mt-0' src='./images/all-metro-mock.png' alt='Mix It Up project avatar' />
+					<img className='mocks mt-9 lg:mt-0' src={allMetro} alt='Mix It Up project avatar' />
 				</section>
 
 				{/* Flickbase */}
@@ -114,7 +120,7 @@ export default function Work() {
 							</a>
 						</div>
 					</div>
-					<img className='mocks lg:order-first mt-9 lg:mt-0 -z-10' src='./images/flickbase-mock.png' alt='flickbase project avatar' />
+					<img className='mocks lg:order-first mt-9 lg:mt-0 -z-10' src={flickbase} alt='flickbase project avatar' />
 				</section>
 
 				{/* Quote Generator */}
@@ -142,7 +148,7 @@ export default function Work() {
 							</a>
 						</div>
 					</div>
-					<img className='mocks mt-9 lg:mt-0' src='./images/quote-mock.png' alt='Quote Generator project avatar' />
+					<img className='mocks mt-9 lg:mt-0' src={quoteGenerator} alt='Quote Generator project avatar' />
 				</section>
 			</article>
 		</article>
