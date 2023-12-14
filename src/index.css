@@ -149,6 +149,8 @@ form textarea {
 @media screen and (min-width: 1024px) {
     .home {
         padding: 5.25rem 1rem 0;
+        align-items: unset;
+        flex-wrap: wrap;
     }
 
     .container {
