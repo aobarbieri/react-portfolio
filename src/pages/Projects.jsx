@@ -13,6 +13,7 @@ export default function Projects() {
 		getProjectData()
 	}, [])
 
+	document.title = 'Amanda Mitzian - Projects'
 	const loaded = () => {
 		return projects.map((project) => (
 			<section key={project.id} className='container__projects lg:flex justify-between'>

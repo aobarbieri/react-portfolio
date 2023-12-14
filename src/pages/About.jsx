@@ -12,6 +12,8 @@ export default function About() {
 		getAboutData()
 	}, [])
 
+	document.title = 'Amanda Mitzian - About'
+
 	const loaded = () => (
 		<section className='home'>
 			{/* Avatar */}
