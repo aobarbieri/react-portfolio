@@ -1,14 +1,14 @@
 [
 	{
-		"name": "project1",
-		"live": "https://app.herokuapp.com/whatever",
-		"git": "http://www.github.com/username/reponame",
-		"image": "http://www.imgur.com/pictureofproject.png"
+		"name": "Doxie Dash",
+		"live": "https://aobarbieri.github.io/doxie-game/",
+		"git": "https://github.com/aobarbieri/doxie-game",
+		"image": "https://raw.githubusercontent.com/aobarbieri/doxie-game/main/images/preview.png"
 	},
 	{
-		"name": "project2",
-		"live": "https://app.netlify.app/whatever",
-		"git": "http://www.github.com/username/reponame",
-		"image": "http://www.imgur.com/pictureofproject.png"
+		"name": "Animal Kingdom",
+		"live": "https://animalkingdom-67bef32faf2a.herokuapp.com/",
+		"git": "https://github.com/smackeem/Animal_Kingdom_Project_2",
+		"image": "https://raw.githubusercontent.com/smackeem/Animal_Kingdom_Project_2/main/screenshots/home.png"
 	}
 ]
