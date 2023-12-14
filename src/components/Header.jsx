@@ -3,15 +3,15 @@ import logo from '../assets/html-logo.svg'
 
 export default function Header() {
 	return (
-		<header className='fixed w-full'>
-			<nav className='navbar'>
+		<header>
+			<nav className='navbar fixed flex justify-between'>
 				<Link to='/' className='flex items-end'>
 					<img className='hidden md:inline md:h-7' src={logo} alt='HTML icon' />
 					<h3 className='text-lg md:text-xl font-semibold mx-2'>Amanda Mitzian</h3>
 				</Link>
 
 				{/* Tablet and Laptop */}
-				<ul className='navbar__full'>
+				<ul className='flex items-end'>
 					<Link to='/'>
 						<li className='mx-5'>Home</li>
 					</Link>

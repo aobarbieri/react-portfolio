@@ -121,7 +121,7 @@ form textarea {
 /* Tablet */
 @media screen and (min-width: 768px) {
     .mocks {
-        max-width: 36rem;
+        max-width: 26rem;
     }
 
     .home {
@@ -148,14 +148,15 @@ form textarea {
 /* Laptop */
 @media screen and (min-width: 1024px) {
     .home {
-        padding: 5.25rem 1rem 0;
+        padding    : 5.25rem 1rem 0;
         align-items: unset;
-        flex-wrap: wrap;
+        flex-wrap  : wrap;
     }
 
     .container {
         max-width: 1140px;
         margin   : 0 auto;
+        margin-top: 100px;
     }
 
     .container__about {
@@ -164,7 +165,6 @@ form textarea {
 
     .container__projects {
         padding: 3rem 4rem;
-
     }
 
     .work--description {

@@ -1,11 +1,13 @@
 [
 	{
+		"id": "1",
 		"name": "Doxie Dash",
 		"live": "https://aobarbieri.github.io/doxie-game/",
 		"git": "https://github.com/aobarbieri/doxie-game",
 		"image": "https://raw.githubusercontent.com/aobarbieri/doxie-game/main/images/preview.png"
 	},
 	{
+		"id": "2",
 		"name": "Animal Kingdom",
 		"live": "https://animalkingdom-67bef32faf2a.herokuapp.com/",
 		"git": "https://github.com/smackeem/Animal_Kingdom_Project_2",
