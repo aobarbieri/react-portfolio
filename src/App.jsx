@@ -1,14 +1,14 @@
-import Work from './components/Work'
+import Projects from './pages/Projects'
 import Footer from './components/Footer'
-import NavBar from './components/NavBar'
-import Intro from './components/Intro'
+import Header from './components/Header'
+import About from './pages/About'
 
 function App() {
 	return (
 		<>
-      <NavBar />
-      <Intro />
-			<Work />
+      <Header />
+      <About />
+			<Projects />
 			<Footer />
 		</>
 	)

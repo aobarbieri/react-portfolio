@@ -1,6 +1,6 @@
 import avatar from '../assets/avatar.png'
 
-export default function Intro() {
+export default function About() {
 	return (
 		<section className='home'>
 			{/* Avatar */}

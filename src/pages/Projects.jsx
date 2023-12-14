@@ -5,7 +5,7 @@ import allMetro from '../assets/all-metro-mock.png'
 import flickbase from '../assets/flickbase-mock.png'
 import quoteGenerator from '../assets/quote-mock.png'
 
-export default function Work() {
+export default function Projects() {
     return (
 		<article className='container'>
 			<article>
