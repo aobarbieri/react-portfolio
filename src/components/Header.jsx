@@ -3,8 +3,8 @@ import logo from '../assets/html-logo.svg'
 
 export default function Header() {
 	return (
-		<header>
-			<nav className='navbar fixed flex justify-between'>
+		<header className='fixed'>
+			<nav className='navbar flex justify-between'>
 				<Link to='/' className='flex items-end'>
 					<img className='hidden md:inline md:h-7' src={logo} alt='HTML icon' />
 					<h3 className='text-lg md:text-xl font-semibold mx-2'>Amanda Mitzian</h3>
@@ -16,7 +16,7 @@ export default function Header() {
 						<li className='mx-5'>Home</li>
 					</Link>
 					<Link to='/projects'>
-						<li className='mx-5'>Projects</li>
+						<li>Projects</li>
 					</Link>
 				</ul>
 			</nav>

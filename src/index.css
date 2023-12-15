@@ -11,7 +11,8 @@
 @import url(./styles/_navbar.css);
 
 :root {
-    --font           : rgb(255, 241, 242, 0.8);
+    --font  : rgb(255, 241, 242, 0.8);
+    --bg-nav: #1412116f;
     --bgfirst        : #141211;
     --bgsecond       : #100f0e;
     --btn-bg-gradient: linear-gradient(315deg, #ffcfdf, #b0f3f1 74%);
@@ -36,6 +37,12 @@ body {
     font-family: 'Poppins', system-ui, sans-serif;
     font-size  : 16px;
     font-weight: 400;
+}
+
+header {
+    width     : 100%;
+    top       : 0;
+    background: var(--bg-nav);
 }
 
 footer {
@@ -71,10 +78,8 @@ form textarea {
 }
 
 .avatar {
-    max-width : 5rem;
-    height    : auto;
+    max-height: 15rem;
     padding   : 2px;
-    background: var(--btn-bg-gradient);
 }
 
 .container__about,
@@ -94,7 +99,6 @@ form textarea {
 }
 
 .home {
-    height     : 100vh;
     width      : auto;
     margin     : 0 auto;
     padding    : 5.75rem 1rem 0;
@@ -149,13 +153,14 @@ form textarea {
 @media screen and (min-width: 1024px) {
     .home {
         padding    : 5.25rem 1rem 0;
-        align-items: unset;
+        align-items: center;
+        justify-content: center;
         flex-wrap  : wrap;
     }
 
     .container {
-        max-width: 1140px;
-        margin   : 0 auto;
+        max-width : 1140px;
+        margin    : 0 auto;
         margin-top: 100px;
         min-height: 90vh;
     }
