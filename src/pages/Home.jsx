@@ -1,10 +1,7 @@
-export default function Home() {
-    
-    document.title = 'Amanda Mitzian - Home'
+import About from './About'
 
-    return (
-        <>
-            <h1>Home</h1>
-        </>
-    )
+export default function Home() {
+    document.title = "Amanda Mitzian"
+    return <About />
+       
 }

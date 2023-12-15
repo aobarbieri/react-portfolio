@@ -15,14 +15,8 @@ export default function Header() {
 					<Link to='/'>
 						<li className='mx-5'>Home</li>
 					</Link>
-					<Link to='/about'>
-						<li>About</li>
-					</Link>
 					<Link to='/projects'>
 						<li className='mx-5'>Projects</li>
-					</Link>
-					<Link to='/resume'>
-						<li>Resume</li>
 					</Link>
 				</ul>
 			</nav>
