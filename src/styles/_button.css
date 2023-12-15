@@ -9,6 +9,7 @@
 .btn-bg {
     background: var(--btn-bg-gradient);
     color     : var(--bgfirst);
+    height: 38px;
 }
 
 .btn-nobg:hover {

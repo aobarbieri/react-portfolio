@@ -16,16 +16,16 @@ export default function Projects() {
 	document.title = 'Amanda Mitzian - Projects'
 	const loaded = () => {
 		return projects.map((project) => (
-			<section key={project.id} className='container__projects lg:flex justify-between'>
+			<section key={project.id} className='container__projects my-16 lg:flex justify-between'>
 				<div className='lg:basis-1/2'>
 					<h2 className='pr-4 text-3xl font-semibold inline'>{project.name}</h2>
 
-					<p>{project.description}</p>
+					<p className='my-6'>{project.description}</p>
 					<div className='grid grid-cols-1 lg:grid-cols-2 justify-items-center gap-3'>
-						<a href={project.git} target='_blank' className='btn-bg py-2 px-10 text-sm' rel='noreferrer'>
-							<i className='fab fa-github-alt text-lg mr-1.5'></i> GitHub
+						<a href={project.git} target='_blank' className='btn-bg py-2 px-10 text-sm flex' rel='noreferrer'>
+							<i className='fab self-center fa-github-alt text-lg mr-1.5'></i> GitHub
 						</a>
-						<a href={project.live} target='_blank' className='btn-bg py-2 px-10 text-sm' rel='noreferrer'>
+						<a href={project.live} target='_blank' className='btn-bg py-2 px-10 text-sm lg:justify-self-start' rel='noreferrer'>
 							View
 						</a>
 					</div>
