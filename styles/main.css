@@ -1,0 +1,38 @@
+.navbar {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 1.5rem 3.5rem;
+  z-index: 999;
+}
+
+.btn-nobg,
+.btn-bg {
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: transform 150ms ease;
+}
+
+.btn-bg {
+  background: var(--btn-bg-gradient);
+  color: var(--bgfirst);
+  height: 38px;
+}
+
+.btn-nobg:hover {
+  background: var(--btn-bg-gradient);
+  color: var(--bgfirst);
+}
+
+.btn-bg:hover {
+  border: 1px solid var(--font);
+  background: unset;
+  color: var(--font);
+}
+
+.btn-bg:hover,
+.btn-nobg:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
