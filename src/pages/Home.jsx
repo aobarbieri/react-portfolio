@@ -1,7 +1,12 @@
-import About from './About'
+import About from '../components/About'
+import Projects from '../components/Projects'
 
 export default function Home() {
-    document.title = "Amanda Mitzian"
-    return <About />
-       
+	document.title = 'Amanda Mitzian'
+	return (
+		<>
+			<About />
+			<Projects />
+		</>
+	)
 }

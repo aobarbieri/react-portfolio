@@ -8,12 +8,15 @@ export default function Header() {
 					<h3 className=''>Amanda Mitzian</h3>
 				</Link>
 
-				{/* Tablet and Laptop */}
-				<ul className='flex items-end'>
+				<ul className=''>
 					<Link to='/projects'>
 						<li>Projects</li>
 					</Link>
-					<li>Resume</li>
+					<li>
+						<a href='https://drive.google.com/file/d/1GiCiuwG9234fkXM11Suym41aN3mSfgE1/view?usp=sharing' target='_blank' rel='noreferrer'>
+							Resume
+						</a>
+					</li>
 					<li>Contact</li>
 				</ul>
 			</nav>
