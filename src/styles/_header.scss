@@ -1,0 +1,44 @@
+header {
+	top: 0;
+	width: 100%;
+	height: 7.2rem;
+	background-color: $brand-secondary;
+}
+
+.navbar {
+	height: 100%;
+	max-width: 81.375rem;
+	margin: 0 auto;
+	& > a {
+		text-align: center;
+		margin: 1.5rem 4.31rem;
+	}
+	ul {
+		align-items: center;
+		justify-content: center;
+		gap: 3.25rem;
+		background-color: #fff;
+		padding: 0.84rem 0;
+		color: $gray-dark;
+		font-size: 1.125rem;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	header {
+		height: 4.8125rem;
+	}
+	.navbar {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		& > a {
+			text-align: left;
+			margin: 0;
+		}
+		ul {
+			background-color: inherit;
+			padding: 0;
+		}
+	}
+}

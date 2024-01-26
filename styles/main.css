@@ -1,16 +1,9 @@
-/* Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap");
-:root {
-  --font: rgb(255, 241, 242, 0.8);
-  --bg-nav: #1412116f;
-  --btn-bg-gradient: linear-gradient(315deg, #ffcfdf, #b0f3f1 74%);
-  --bg-gradient: linear-gradient(180deg, var(--bgfirst), var(--bgsecond) 20%);
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 html {
@@ -20,17 +13,47 @@ html {
 
 body {
   min-height: 100vh;
-  font-family: "Poppins", system-ui, sans-serif;
+  color: #0c0c0c;
+  font-family: "Lato", system-ui, sans-serif;
   font-size: 16px;
   font-weight: 400;
 }
 
-.navbar {
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 1.5rem 3.5rem;
-  z-index: 999;
+main {
+  margin-top: 7.2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    margin-top: 4.8125rem;
+  }
+}
+h1 {
+  font-weight: 700;
+  font-size: 2.8125rem;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.about {
+  background-color: #fff6e6;
 }
 
 .btn-nobg,
@@ -62,4 +85,60 @@ body {
 .btn-nobg:hover {
   transform: scale(1.05);
   cursor: pointer;
+}
+
+header {
+  top: 0;
+  width: 100%;
+  height: 7.2rem;
+  background-color: #fff6e6;
+}
+
+.navbar {
+  height: 100%;
+  max-width: 81.375rem;
+  margin: 0 auto;
+}
+.navbar > a {
+  text-align: center;
+  margin: 1.5rem 4.31rem;
+}
+.navbar ul {
+  align-items: center;
+  justify-content: center;
+  gap: 3.25rem;
+  background-color: #fff;
+  padding: 0.84rem 0;
+  color: #181818;
+  font-size: 1.125rem;
+}
+
+@media screen and (min-width: 800px) {
+  header {
+    height: 4.8125rem;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar > a {
+    text-align: left;
+    margin: 0;
+  }
+  .navbar ul {
+    background-color: inherit;
+    padding: 0;
+  }
+}
+.fixed {
+  position: fixed;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.flex {
+  display: flex;
 }

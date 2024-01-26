@@ -14,7 +14,7 @@ export default function About() {
 	}, [])
 
 	const loaded = () => (
-		<section className=''>
+		<section className='about'>
 			<h1 className=''>Hi, I&apos;m {about.name}</h1>
 			<p>{about.bio}</p>
 			<img className='' src={avatar} alt="Amanda's Avatar" />

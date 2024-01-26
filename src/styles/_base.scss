@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+$gray-darker: #0c0c0c;
+$gray-dark: #181818;
+$gray: #454545;
+$gray-light: #575757;
+
+$font-color-primary: $gray-darker;
+$font-color-secondary: $gray;
+$font-color-tertiary: #256850;
+
+$brand-default: #99d3be;
+$brand-primary: #629a86;
+$brand-secondary: #fff6e6;
+$brand-tertiary: #e1ece8;
+
+$gradient: linear-gradient(315deg, #ffcfdf, #b0f3f1 74%);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+
+html {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	min-height: 100vh;
+	color: $font-color-primary;
+	font-family: 'Lato', system-ui, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+main {
+	margin-top: 7.2rem;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+@media screen and (min-width: 800px) {
+	main {
+		margin-top: 4.8125rem;
+	}
+}
