@@ -17,26 +17,24 @@ export default function Projects() {
 
 	const loaded = () => {
 		return (
-			<>
+			<section className=''>
 				<h2>Projects</h2>
 				{projects.map((project) => (
-					<section key={project.id} className=''>
+					<div className='' key={project.id}>
 						<img className='' src={project.image} alt={project.name} />
-						<div className=''>
-							<h2 className=''>{project.name}</h2>
-							<p className=''>{project.description}</p>
-							<p>Built with:</p>
+						<h2 className=''>{project.name}</h2>
+						<p className=''>{project.description}</p>
+						<p>Built with:</p>
 
-							<a href={project.git} target='_blank' className='' rel='noreferrer'>
-								GitHub
-							</a>
-							<a href={project.live} target='_blank' className='' rel='noreferrer'>
-								View
-							</a>
-						</div>
-					</section>
+						<a href={project.git} target='_blank' className='' rel='noreferrer'>
+							GitHub
+						</a>
+						<a href={project.live} target='_blank' className='' rel='noreferrer'>
+							View
+						</a>
+					</div>
 				))}
-			</>
+			</section>
 		)
 	}
 

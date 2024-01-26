@@ -1,3 +1,47 @@
 .about {
+	padding: 2.69rem 0 0;
 	background-color: $brand-secondary;
+	text-align: center;
+	.about-content {
+		margin: 0 auto;
+		width: 75%;
+		padding-bottom: 1.63rem;
+		h1 {
+			white-space: nowrap;
+			margin-bottom: 0.5rem;
+		}
+	}
+
+	.wrapper {
+		position: relative;
+		width: 100vw;
+
+		.avatar {
+			width: 25.90194rem;
+			margin: 0 auto 0.4rem;
+			position: relative;
+			z-index: 10;
+		}
+		.avatar-bg {
+			position: absolute;
+			bottom: -25px;
+			left: 0;
+			right: 0;
+		}
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.about {
+		padding: 6.5rem 0 0;
+		.about-content {
+			padding: 0 0 3.94rem;
+			max-width: 26.625rem;
+		}
+		.wrapper {
+			.avatar {
+				margin: 0 auto;
+			}
+		}
+	}
 }
