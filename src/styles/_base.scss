@@ -49,6 +49,11 @@ a {
 	color: inherit;
 }
 
+a:hover {
+	text-decoration: underline;
+	text-underline-offset: 0.44rem;
+}
+
 @media screen and (min-width: 800px) {
 	main {
 		margin-top: 4.8125rem;

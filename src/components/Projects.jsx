@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import github from '../assets/brands/github.svg'
 
 export default function Projects() {
 	const [projects, setProjects] = useState(null)
@@ -17,20 +18,21 @@ export default function Projects() {
 
 	const loaded = () => {
 		return (
-			<section className=''>
+			<section className='projects'>
 				<h2>Projects</h2>
 				{projects.map((project) => (
-					<div className='' key={project.id}>
-						<img className='' src={project.image} alt={project.name} />
-						<h2 className=''>{project.name}</h2>
-						<p className=''>{project.description}</p>
-						<p>Built with:</p>
+					<div className='projects-wrapper' key={project.id}>
+						<h3>{project.name}</h3>
+						<img src={project.image} alt={project.name} />
+						<p className='description'>{project.description}</p>
+						<p className='tech'>Built with:</p>
 
-						<a href={project.git} target='_blank' className='' rel='noreferrer'>
-							GitHub
+						<a className='btn-cta' href={project.live} target='_blank' rel='noreferrer'>
+							Try it out
 						</a>
-						<a href={project.live} target='_blank' className='' rel='noreferrer'>
-							View
+						<a className='btn-link-cta' href={project.git} target='_blank' rel='noreferrer'>
+							<img src={github} alt='GitHub' />
+							View on GitHub
 						</a>
 					</div>
 				))}
