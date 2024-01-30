@@ -152,6 +152,15 @@ p {
   margin-right: 0.31rem;
 }
 
+.footer {
+  background: linear-gradient(315deg, #fff6e6, #99d3be 80%);
+  text-align: center;
+  padding: 1.3rem 0;
+}
+.footer p {
+  font-size: 0.875rem;
+}
+
 header {
   top: 0;
   width: 100%;

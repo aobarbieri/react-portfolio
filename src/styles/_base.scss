@@ -14,7 +14,7 @@ $brand-primary: #629a86;
 $brand-secondary: #fff6e6;
 $brand-tertiary: #e1ece8;
 
-$gradient: linear-gradient(315deg, #ffcfdf, #b0f3f1 74%);
+$gradient: linear-gradient(315deg, $brand-secondary, $brand-default 80%);
 
 * {
 	margin: 0;
