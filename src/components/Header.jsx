@@ -17,7 +17,7 @@ export default function Header() {
 							Resume
 						</a>
 					</li>
-					<li>Contact</li>
+					{/* <li>Contact</li> */}
 				</ul>
 			</nav>
 		</header>
