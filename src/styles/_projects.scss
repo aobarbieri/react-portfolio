@@ -21,9 +21,16 @@
 		}
 
 		.tech {
+			display: flex;
+			gap: 0.62rem;
+			align-items: center;
 			padding: 1.88rem 0;
 			font-size: 0.875rem;
 			color: $gray-light;
+			.tech-icon {
+				width: 1.625rem;
+				height: 1.625rem;
+			}
 		}
 	}
 }

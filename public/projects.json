@@ -5,7 +5,20 @@
 		"live": "https://aobarbieri.github.io/doxie-game/",
 		"git": "https://github.com/aobarbieri/doxie-game",
 		"image": "https://raw.githubusercontent.com/aobarbieri/doxie-game/main/images/preview.png",
-		"description": "In the Doxie Dash, players take on the role of an adorable, elongated dachshund dog on an exciting adventure. Instead of a snake, our dachshund protagonist explores a whimsical world filled with doggy-themed obstacles and treats. So, grab your virtual leash and embark on this tail-wagging adventure with your dachshund companion!"
+		"description": "In the Doxie Dash, players take on the role of an adorable, elongated dachshund dog on an exciting adventure. Instead of a snake, our dachshund protagonist explores a whimsical world filled with doggy-themed obstacles and treats. So, grab your virtual leash and embark on this tail-wagging adventure with your dachshund companion!",
+		"tech": {
+			"html": true,
+			"css": true,
+			"sass": false,
+			"tailwind": false,
+			"js": true,
+			"react": false,
+			"next-js": false,
+			"express": false,
+			"mongodb": false,
+			"mongoose": false,
+			"postgre": false
+		}
 	},
 	{
 		"id": "2",
@@ -13,6 +26,19 @@
 		"live": "https://animalkingdom-67bef32faf2a.herokuapp.com/",
 		"git": "https://github.com/smackeem/Animal_Kingdom_Project_2",
 		"image": "https://raw.githubusercontent.com/smackeem/Animal_Kingdom_Project_2/main/screenshots/home.png",
-		"description": "Animal Kingdom is a comprehensive and user-friendly web application designed to streamline and enhance the pet care experience for both pet owners and veterinarians. Animal Kingdom is not just an application; it's a companion on your pet care journey, designed to make the process of managing your pet's health as enjoyable and stress-free as possible."
+		"description": "Animal Kingdom is a comprehensive and user-friendly web application designed to streamline and enhance the pet care experience for both pet owners and veterinarians. Animal Kingdom is not just an application; it's a companion on your pet care journey, designed to make the process of managing your pet's health as enjoyable and stress-free as possible.",
+		"tech": {
+			"html": false,
+			"css": true,
+			"sass": true,
+			"tailwind": false,
+			"js": true,
+			"react": false,
+			"next-js": false,
+			"express": true,
+			"mongodb": true,
+			"mongoose": true,
+			"postgre": false
+		}
 	}
 ]
