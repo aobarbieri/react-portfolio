@@ -13,6 +13,7 @@ html {
 body {
   min-height: 100vh;
   color: #0c0c0c;
+  background: #fff6e6;
   font-family: "Lato", system-ui, sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -72,7 +73,6 @@ p {
 }
 .about {
   padding: 2.69rem 0 0;
-  background-color: #fff6e6;
   text-align: center;
 }
 .about .about-content {
@@ -90,15 +90,19 @@ p {
 }
 .about .wrapper .avatar {
   width: 25.90194rem;
-  margin: 0 auto 0.4rem;
+  margin: 0 auto 1.1rem;
   position: relative;
   z-index: 10;
 }
 .about .wrapper .avatar-bg {
   position: absolute;
-  bottom: -25px;
+  width: 100%;
+  height: 12.81425rem;
+  bottom: -20px;
   left: 0;
   right: 0;
+  z-index: 5;
+  object-fit: cover;
 }
 
 @media screen and (min-width: 800px) {
@@ -197,7 +201,9 @@ header {
   }
 }
 .projects {
-  margin: 4.19rem auto 0;
+  margin: 0 auto;
+  padding: 4.19rem 0;
+  background-color: #fff;
 }
 .projects h2 {
   text-align: center;
