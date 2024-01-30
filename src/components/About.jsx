@@ -28,5 +28,5 @@ export default function About() {
 		</section>
 	)
 
-	return about ? loaded() : <h1>Loading...</h1>
+	return about ? loaded() : ''
 }
