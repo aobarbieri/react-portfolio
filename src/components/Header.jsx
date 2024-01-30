@@ -13,7 +13,7 @@ export default function Header() {
 						<Link to='/projects'>Projects</Link>
 					</li>
 					<li>
-						<a href='https://drive.google.com/file/d/1GiCiuwG9234fkXM11Suym41aN3mSfgE1/view?usp=sharing' target='_blank' rel='noreferrer'>
+						<a href='https://drive.google.com/file/d/1zhjTywdUQ9HmZyuEaP6MT1hUastRY-n9/view?usp=sharing' target='_blank' rel='noreferrer'>
 							Resume
 						</a>
 					</li>
