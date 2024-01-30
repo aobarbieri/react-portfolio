@@ -4,8 +4,8 @@
 		"name": "Doxie Dash",
 		"live": "https://aobarbieri.github.io/doxie-game/",
 		"git": "https://github.com/aobarbieri/doxie-game",
-		"image": "https://raw.githubusercontent.com/aobarbieri/doxie-game/main/images/preview.png",
-		"description": "In the Doxie Dash, players take on the role of an adorable, elongated dachshund dog on an exciting adventure. Instead of a snake, our dachshund protagonist explores a whimsical world filled with doggy-themed obstacles and treats. So, grab your virtual leash and embark on this tail-wagging adventure with your dachshund companion!",
+		"image": "https://github.com/aobarbieri/assets/blob/b95f1897e513e8bab039e034c6bd568792a9b132/doxie-dash.png?raw=true",
+		"description": "Play as an elongated dachshund in Doxie Dash, exploring a doggy-themed snake game.",
 		"tech": {
 			"html": true,
 			"css": true,
@@ -25,8 +25,8 @@
 		"name": "Animal Kingdom",
 		"live": "https://animalkingdom-67bef32faf2a.herokuapp.com/",
 		"git": "https://github.com/smackeem/Animal_Kingdom_Project_2",
-		"image": "https://raw.githubusercontent.com/smackeem/Animal_Kingdom_Project_2/main/screenshots/home.png",
-		"description": "Animal Kingdom is a comprehensive and user-friendly web application designed to streamline and enhance the pet care experience for both pet owners and veterinarians. Animal Kingdom is not just an application; it's a companion on your pet care journey, designed to make the process of managing your pet's health as enjoyable and stress-free as possible.",
+		"image": "https://github.com/aobarbieri/assets/blob/main/animal-kingdom.png?raw=true",
+		"description": "Streamlining the pet care experience for owners and veterinarians alike. Enjoy stress-free management of your pet's health.",
 		"tech": {
 			"html": false,
 			"css": true,

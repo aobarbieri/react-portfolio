@@ -32,37 +32,40 @@ export default function Projects() {
 		return (
 			<section className='projects'>
 				<h2>Projects</h2>
+
 				{projects.map((project) => (
-					<div className='projects-wrapper' key={project.id}>
+					<section className='projects-wrapper' key={project.id}>
 						<h3>{project.name}</h3>
 						<img src={project.image} alt={project.name} />
-						<p className='description'>{project.description}</p>
-						<div className='tech'>
-							<p>Built with:</p>
+						<div>
+							<p className='description'>{project.description}</p>
+							<div className='tech'>
+								<p>Built with:</p>
 
-							{project.tech.html ? <img className='tech-icon' src={html} alt='HTML' title='HTML' /> : ''}
+								{project.tech.html ? <img className='tech-icon' src={html} alt='HTML' title='HTML' /> : ''}
 
-							{project.tech.css ? <img className='tech-icon' src={css} alt='CSS' title='CSS' /> : ''}
+								{project.tech.css ? <img className='tech-icon' src={css} alt='CSS' title='CSS' /> : ''}
 
-							{project.tech.sass ? <img className='tech-icon' src={sass} alt='SASS' title='SASS' /> : ''}
+								{project.tech.sass ? <img className='tech-icon' src={sass} alt='SASS' title='SASS' /> : ''}
 
-							{project.tech.js ? <img className='tech-icon' src={js} alt='JavaScript' title='JavaScript' /> : ''}
+								{project.tech.js ? <img className='tech-icon' src={js} alt='JavaScript' title='JavaScript' /> : ''}
 
-							{project.tech.express ? <img className='tech-icon' src={express} alt='Express.js' title='Express.js' /> : ''}
+								{project.tech.express ? <img className='tech-icon' src={express} alt='Express.js' title='Express.js' /> : ''}
 
-							{project.tech.mongodb ? <img className='tech-icon' src={mongodb} alt='Mongo DB' title='Mongo DB' /> : ''}
+								{project.tech.mongodb ? <img className='tech-icon' src={mongodb} alt='Mongo DB' title='Mongo DB' /> : ''}
 
-							{project.tech.mongoose ? <img className='tech-icon' src={mongoose} alt='Mongoose' title='Mongoose' /> : ''}
+								{project.tech.mongoose ? <img className='tech-icon' src={mongoose} alt='Mongoose' title='Mongoose' /> : ''}
+							</div>
+
+							<a className='btn-cta' href={project.live} target='_blank' rel='noreferrer'>
+								Try it out
+							</a>
+							<a className='btn-link-cta' href={project.git} target='_blank' rel='noreferrer'>
+								<img src={github} alt='GitHub' />
+								View on GitHub
+							</a>
 						</div>
-
-						<a className='btn-cta' href={project.live} target='_blank' rel='noreferrer'>
-							Try it out
-						</a>
-						<a className='btn-link-cta' href={project.git} target='_blank' rel='noreferrer'>
-							<img src={github} alt='GitHub' />
-							View on GitHub
-						</a>
-					</div>
+					</section>
 				))}
 			</section>
 		)

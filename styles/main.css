@@ -120,7 +120,7 @@ p {
 .btn-cta,
 .btn-link-cta {
   height: 4.125rem;
-  padding: 1.375rem 6.5625rem;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -224,7 +224,9 @@ header {
   display: flex;
   gap: 0.62rem;
   align-items: center;
-  padding: 1.88rem 0;
+  padding: 1.25rem 0;
+}
+.projects .projects-wrapper .tech p {
   font-size: 0.875rem;
   color: #575757;
 }
@@ -233,6 +235,32 @@ header {
   height: 1.625rem;
 }
 
+@media screen and (min-width: 800px) {
+  .projects .projects-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    max-width: 66.8rem;
+  }
+  .projects .projects-wrapper > h3 {
+    position: absolute;
+    right: 0;
+    width: 45%;
+  }
+  .projects .projects-wrapper > img {
+    margin: 0;
+    width: 50%;
+    max-width: 35.1875rem;
+    max-height: 22.3125rem;
+  }
+  .projects .projects-wrapper > div {
+    margin-top: 2.1rem;
+    max-width: 45%;
+  }
+  .projects .projects-wrapper .tech {
+    padding: 2.5rem 0;
+  }
+}
 .fixed {
   position: fixed;
 }
