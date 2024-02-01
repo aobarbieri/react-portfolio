@@ -8,7 +8,7 @@ export default function Header() {
 					<h3 className=''>Amanda Mitzian</h3>
 				</Link>
 
-				<ul className='flex'>
+				<ul className='flex nav-items'>
 					<li>
 						<Link to='/projects'>Projects</Link>
 					</li>
