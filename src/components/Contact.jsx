@@ -7,19 +7,19 @@ export default function Contact() {
 	return (
 		<aside className='floating-list'>
 			<ul>
-				<li className='list-item item-1'>
+				<li className='list-item'>
 					<a href=''>
 						LinkedIn
 						<img src={linkedin} alt='' />
 					</a>
 				</li>
-				<li className='list-item item-2'>
+				<li className='list-item'>
 					<a href=''>
 						GitHub
 						<img src={github} alt='' />
 					</a>
 				</li>
-				<li className='list-item item-3'>
+				<li className='list-item'>
 					<a href=''>
 						Email
 						<img src={email} alt='' />
