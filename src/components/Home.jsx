@@ -1,5 +1,5 @@
-import About from '../components/About'
-import Projects from '../components/Projects'
+import About from './About'
+import Projects from './Projects'
 
 export default function Home() {
 	document.title = 'Amanda Mitzian'
