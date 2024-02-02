@@ -14,8 +14,8 @@ function App() {
 			<main className='container'>
 				<Routes>
 					<Route exact path='/' element={<Home />} />
-					<Route path='/projects' element={<Projects />} />
 					<Route path='/about' element={<About />} />
+					<Route path='/projects' element={<Projects />} />
 				</Routes>
 			</main>
 			<Footer />

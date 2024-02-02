@@ -1,5 +1,6 @@
 import About from './About'
 import Projects from './Projects'
+import Skills from './Skills'
 
 export default function Home() {
 	document.title = 'Amanda Mitzian'
@@ -7,6 +8,7 @@ export default function Home() {
 		<>
 			<About />
 			<Projects />
+			<Skills />
 		</>
 	)
 }

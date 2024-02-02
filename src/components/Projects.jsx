@@ -31,7 +31,8 @@ export default function Projects() {
 	const loaded = () => {
 		return (
 			<section className='projects'>
-				<h2>Projects</h2>
+				<h2>Work</h2>
+				<h3>A Selection Of Stuff I&apos;ve Built</h3>
 
 				{projects.map((project) => (
 					<section className='projects-wrapper' key={project.id}>

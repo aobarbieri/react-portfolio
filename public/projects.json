@@ -4,7 +4,7 @@
 		"name": "Doxie Dash",
 		"live": "https://aobarbieri.github.io/doxie-game/",
 		"git": "https://github.com/aobarbieri/doxie-game",
-		"image": "https://github.com/aobarbieri/assets/blob/main/doxie-dash.png?raw=true",
+		"image": "../src/assets/images/doxie-dash.png",
 		"description": "Play as an elongated dachshund in Doxie Dash, exploring a doggy-themed snake game.",
 		"tech": {
 			"html": true,
@@ -25,7 +25,7 @@
 		"name": "Mix It Up",
 		"live": "https://mix-itup.netlify.app/",
 		"git": "https://github.com/aobarbieri/mix-it-up-2.0",
-		"image": "https://github.com/aobarbieri/assets/blob/main/mix-it-up.png?raw=true",
+		"image": "../src/assets/images/mix-it-up.png",
 		"description": "Input your ingredients, and Mix It Up generates tailored drink recipes from a vast database, saving you from endless searches.",
 		"tech": {
 			"html": false,
@@ -46,7 +46,7 @@
 		"name": "Food&Stuff",
 		"live": "https://lumina-task.vercel.app/",
 		"git": "https://github.com/aobarbieri/LuminaTask",
-		"image": "https://github.com/aobarbieri/assets/blob/main/food&stuff.png?raw=true",
+		"image": "../src/assets/images/food&stuff.png",
 		"description": "User-friendly platform that enables users to effortlessly create lists based on their preferences and needs.",
 		"tech": {
 			"html": false,
@@ -67,7 +67,7 @@
 		"name": "Animal Kingdom",
 		"live": "https://animalkingdom-67bef32faf2a.herokuapp.com/",
 		"git": "https://github.com/smackeem/Animal_Kingdom_Project_2",
-		"image": "https://github.com/aobarbieri/assets/blob/main/animal-kingdom.png?raw=true",
+		"image": "../src/assets/images/animal-kingdom.png",
 		"description": "Streamlining the pet care experience for owners and veterinarians alike. Enjoy stress-free management of your pet's health.",
 		"tech": {
 			"html": false,
@@ -88,7 +88,7 @@
 		"name": "All Metro",
 		"live": "https://allmetro.netlify.app/",
 		"git": "https://github.com/aobarbieri/allmetro",
-		"image": "https://github.com/aobarbieri/assets/blob/main/all-metro.png?raw=true",
+		"image": "../src/assets/images/all-metro.png",
 		"description": "Your go-to in Piracicaba - Brazil, for training, consulting, calibration, maintenance, and sales of residential and commercial scales.",
 		"tech": {
 			"html": true,
@@ -109,7 +109,7 @@
 		"name": "StudiOn",
 		"live": "https://studion-events.netlify.app/",
 		"git": "https://github.com/aobarbieri/studion",
-		"image": "https://github.com/aobarbieri/assets/blob/main/studion.png?raw=true",
+		"image": "../src/assets/images/studion.png",
 		"description": "Impress your audience with seamless product launches and campaign introductions. Studion Events welcomes businesses and non-profits to trust them with their upcoming events.",
 		"tech": {
 			"html": true,
