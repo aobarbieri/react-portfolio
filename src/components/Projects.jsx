@@ -26,8 +26,6 @@ export default function Projects() {
 		getProjectData()
 	}, [])
 
-	document.title = 'Amanda Mitzian - Projects'
-
 	const loaded = () => {
 		return (
 			<section className='projects'>
