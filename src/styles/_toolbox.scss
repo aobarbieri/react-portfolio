@@ -1,5 +1,5 @@
 .skills {
-	padding-bottom: 4.19rem;
+	padding: 4.19rem 0;
 	> h2,
 	h3,
 	ul {
@@ -8,8 +8,9 @@
 	}
 	.toolbox {
 		display: grid;
-		grid-template-columns: repeat(6, 12px);
+		grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
 		grid-template-rows: repeat(2, auto);
+		row-gap: 10px;
 		justify-content: space-around;
 		align-content: space-around;
 		padding: 2rem;
@@ -37,6 +38,7 @@
 			max-width: 66.8rem;
 		}
 		.toolbox {
+			grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
 		}
 	}
 }

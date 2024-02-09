@@ -248,6 +248,7 @@ header {
 }
 .projects {
   margin: 0 auto;
+  background-color: #fff;
   padding: 4.19rem 0;
 }
 .projects > h2,
@@ -259,7 +260,6 @@ header {
   margin-bottom: 3.75rem;
 }
 .projects .projects-wrapper {
-  background-color: #fff;
   padding: 2rem;
   border-radius: 12px;
   width: 92%;
@@ -325,7 +325,7 @@ header {
   }
 }
 .skills {
-  padding-bottom: 4.19rem;
+  padding: 4.19rem 0;
 }
 .skills > h2,
 .skills h3,
@@ -335,8 +335,9 @@ header {
 }
 .skills .toolbox {
   display: grid;
-  grid-template-columns: repeat(6, 12px);
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
   grid-template-rows: repeat(2, auto);
+  row-gap: 10px;
   justify-content: space-around;
   align-content: space-around;
   padding: 2rem;
@@ -360,6 +361,9 @@ header {
   .skills h3,
   .skills ul {
     max-width: 66.8rem;
+  }
+  .skills .toolbox {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   }
 }
 .fixed {
