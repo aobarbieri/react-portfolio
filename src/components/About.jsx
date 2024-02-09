@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
-import avatar from '../assets/avatar.svg'
-import bg from '../assets/avatar-bg.png'
+import avatar from '/assets/avatar.svg'
+import bg from '/assets/avatar-bg.png'
 
 export default function About() {
 	const [about, setAbout] = useState(null)
