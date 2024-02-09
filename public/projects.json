@@ -1,26 +1,5 @@
 [
 	{
-		"id": 1,
-		"name": "Doxie Dash",
-		"live": "https://aobarbieri.github.io/doxie-game/",
-		"git": "https://github.com/aobarbieri/doxie-game",
-		"image": "../src/assets/images/doxie-dash.png",
-		"description": "Play as an elongated dachshund in Doxie Dash, exploring a doggy-themed snake game.",
-		"tech": {
-			"html": true,
-			"css": true,
-			"sass": false,
-			"tailwind": false,
-			"js": true,
-			"react": false,
-			"nextJs": false,
-			"express": false,
-			"mongodb": false,
-			"mongoose": false,
-			"postgre": false
-		}
-	},
-	{
 		"id": 2,
 		"name": "Mix It Up",
 		"live": "https://mix-itup.netlify.app/",
@@ -80,6 +59,27 @@
 			"express": true,
 			"mongodb": true,
 			"mongoose": true,
+			"postgre": false
+		}
+	},
+	{
+		"id": 1,
+		"name": "Doxie Dash",
+		"live": "https://aobarbieri.github.io/doxie-game/",
+		"git": "https://github.com/aobarbieri/doxie-game",
+		"image": "../src/assets/images/doxie-dash.png",
+		"description": "Play as an elongated dachshund in Doxie Dash, exploring a doggy-themed snake game.",
+		"tech": {
+			"html": true,
+			"css": true,
+			"sass": false,
+			"tailwind": false,
+			"js": true,
+			"react": false,
+			"nextJs": false,
+			"express": false,
+			"mongodb": false,
+			"mongoose": false,
 			"postgre": false
 		}
 	},
