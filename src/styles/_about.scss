@@ -1,49 +1,79 @@
 .about {
-	padding: 2.69rem 0 0;
-	text-align: center;
-	.about-content {
+	padding: 2.5rem 1rem 1rem;
+	border-bottom: 1px solid $gray-lighter;
+	.avatar {
 		margin: 0 auto;
-		width: 75%;
-		padding-bottom: 1.63rem;
-		h1 {
-			white-space: nowrap;
-			margin-bottom: 0.5rem;
+		background-color: $brand-default;
+		border: 1px solid $gray-lighter;
+		border-radius: 0.7rem;
+		padding: 1rem;
+		width: 14rem;
+		> img {
+			width: 12rem;
+			height: 12rem;
 		}
 	}
-
-	.wrapper {
-		position: relative;
-		width: 100vw;
-
-		.avatar {
-			width: 25.90194rem;
-			margin: 0 auto 1.1rem;
-			position: relative;
-			z-index: 10;
+	.about-content {
+		margin: 2.5rem 0;
+		text-align: center;
+		.pitch {
+			font-size: 1.125rem;
+			font-weight: 500;
+			margin-top: 0.75rem;
+			line-height: 2rem;
 		}
-		.avatar-bg {
-			position: absolute;
-			width: 100%;
-			height: 12.81425rem;
-			bottom: -20px;
-			left: 0;
-			right: 0;
-			z-index: 5;
-			object-fit: cover;
+		.bio {
+			display: none;
+		}
+	}
+	.divider {
+		height: 1px;
+		background-image: $gradient;
+	}
+
+	.about-icons {
+		display: flex;
+		justify-content: center;
+		gap: 2.5rem;
+		margin-top: 1rem;
+		li a {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			img {
+				width: 2rem;
+				height: 2rem;
+				filter: brightness(0) saturate(100%) invert(72%) sepia(16%) saturate(365%) hue-rotate(175deg) brightness(87%) contrast(88%);
+			}
+			span {
+				display: none;
+			}
+		}
+	}
+}
+@media screen and (min-width: 640px) {
+	.about {
+		.about-icons {
+			li a {
+				span {
+					display: block;
+				}
+			}
 		}
 	}
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
 	.about {
-		padding: 6.5rem 0 0;
+		border-right: 1px solid $gray-lighter;
+		border-left: 1px solid $gray-lighter;
+		border-bottom: 0;
+		padding: 3rem;
+		min-height: 100%;
+
 		.about-content {
-			padding: 0 0 3.94rem;
-			max-width: 26.625rem;
-		}
-		.wrapper {
-			.avatar {
-				margin: 0 auto;
+			.bio {
+				display: block;
 			}
 		}
 	}

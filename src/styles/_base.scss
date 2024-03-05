@@ -1,20 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
 
-$gray-darker: #0c0c0c;
-$gray-dark: #181818;
-$gray: #5e6372;
-$gray-light: #555b6c;
+$gray: #94a3b8;
+$gray-light: #e2e8f0;
+$gray-lighter: #e5e7eb;
 
-$font-color-primary: $gray-darker;
-$font-color-secondary: $gray;
-$font-color-tertiary: #256850;
+$font-color-primary: #334155;
+$font-color-secondary: #64748b;
+$font-color-tertiary: #0f172a;
 
-$brand-default: #99d3be;
-$brand-primary: #629a86;
-$brand-secondary: #fbfbfb;
-$brand-tertiary: #eff0f3;
+$brand-default: #fff;
+$brand-primary: #ec4899;
+$brand-secondary: #f8fafc;
 
-$gradient: linear-gradient(315deg, $brand-secondary, $brand-default 80%);
+$gradient: linear-gradient(90deg, rgba(229, 231, 235, 0) 0%, rgba(229, 231, 235, 1) 50%, rgba(229, 231, 235, 0) 100%);
 
 * {
 	margin: 0;
@@ -29,16 +27,18 @@ html {
 }
 
 body {
-	min-height: 100vh;
+	min-height: 100%;
 	color: $font-color-primary;
-	background: $brand-tertiary;
-	font-family: 'Poppins', sans-serif;
+	background: $brand-default;
+	font-family: 'Satoshi-Variable', sans-serif;
 	font-size: 16px;
 	font-weight: 400;
+	#root {
+		width: 100%;
+	}
 }
 
 main {
-	margin-top: 7.2rem;
 }
 
 ul {
@@ -50,8 +50,9 @@ a {
 	color: inherit;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
 	main {
-		margin-top: 4.8125rem;
+		margin-left: 30rem;
+		margin-bottom: 7rem;
 	}
 }
