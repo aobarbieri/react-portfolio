@@ -1,11 +1,15 @@
 import { Link } from 'react-router-dom'
+import logo from '/assets/custom-tag.svg'
 
 export default function Header() {
 	return (
 		<header className='fixed'>
 			<nav className='navbar'>
 				<Link to='/'>
-					<h3 className=''>Amanda Mitzian</h3>
+					<img src={logo} alt='Colored HTML tag' />
+					<h3 className=''>
+						amanda<span>mitzian</span>
+					</h3>
 				</Link>
 
 				<ul className='flex nav-items'>

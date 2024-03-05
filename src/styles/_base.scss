@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 $gray-darker: #0c0c0c;
 $gray-dark: #181818;
-$gray: #454545;
-$gray-light: #575757;
+$gray: #5e6372;
+$gray-light: #555b6c;
 
 $font-color-primary: $gray-darker;
 $font-color-secondary: $gray;
@@ -11,8 +11,8 @@ $font-color-tertiary: #256850;
 
 $brand-default: #99d3be;
 $brand-primary: #629a86;
-$brand-secondary: #fff6e6;
-$brand-tertiary: #e1ece8;
+$brand-secondary: #fbfbfb;
+$brand-tertiary: #eff0f3;
 
 $gradient: linear-gradient(315deg, $brand-secondary, $brand-default 80%);
 
@@ -31,8 +31,8 @@ html {
 body {
 	min-height: 100vh;
 	color: $font-color-primary;
-	background: $brand-secondary;
-	font-family: 'Lato', system-ui, sans-serif;
+	background: $brand-tertiary;
+	font-family: 'Poppins', sans-serif;
 	font-size: 16px;
 	font-weight: 400;
 }

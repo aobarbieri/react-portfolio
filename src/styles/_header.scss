@@ -11,8 +11,13 @@ header {
 	max-width: 81.375rem;
 	margin: 0 auto;
 	& > a {
-		text-align: center;
 		margin: 1.5rem 4.31rem;
+		display: flex;
+		& img {
+			height: 1.75rem;
+			width: 1.75rem;
+			margin-right: 0.5rem;
+		}
 	}
 	.nav-items {
 		align-items: center;
