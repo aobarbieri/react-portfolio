@@ -27,7 +27,7 @@ export default function About() {
 				<div className='bio'>
 					<span>About</span>
 					<p>{about.bio}</p>
-					<button>Show more</button>
+					<button className='btn-cta'>Show more</button>
 				</div>
 			</div>
 			<div className='divider'></div>
