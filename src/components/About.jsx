@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import avatar from '/assets/avatar.svg'
+import avatar from '/assets/amanda.png'
 import github from '/assets/brands/github.svg'
 import linkedin from '/assets/brands/linkedin.svg'
 import email from '/assets/icons/email.svg'
