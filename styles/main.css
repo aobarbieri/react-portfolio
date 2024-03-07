@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap");
 * {
   margin: 0;
@@ -40,6 +41,17 @@ a {
 h1 {
   font-weight: 700;
   font-size: 1.25rem;
+  color: #0f172a;
+}
+
+h2 {
+  font-size: 0.875rem;
+  color: #0f172a;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #0f172a;
 }
 
 p {
@@ -57,42 +69,42 @@ p {
 
 @font-face {
   font-family: "Satoshi-Variable";
-  src: url("/public/assets/fonts/Satoshi-Variable.woff2") format("woff2"), url("/public/assets/fonts/Satoshi-Variable.woff") format("woff"), url("/public/assets/fonts/Satoshi-Variable.ttf") format("truetype");
+  src: url("/assets/fonts/Satoshi-Variable.woff2") format("woff2"), url("/assets/fonts/Satoshi-Variable.woff") format("woff"), url("/assets/fonts/Satoshi-Variable.ttf") format("truetype");
   font-weight: 300 900;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: "Satoshi-Light";
-  src: url("/public/assets/fonts/Satoshi-Light.woff2") format("woff2"), url("/public/assets/fonts/Satoshi-Light.woff") format("woff"), url("/public/assets/fonts/Satoshi-Light.ttf") format("truetype");
+  src: url("/assets/fonts/Satoshi-Light.woff2") format("woff2"), url("/assets/fonts/Satoshi-Light.woff") format("woff"), url("/assets/fonts/Satoshi-Light.ttf") format("truetype");
   font-weight: 300;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: "Satoshi-Regular";
-  src: url("/public/assets/fonts/Satoshi-Regular.woff2") format("woff2"), url("/public/assets/fonts/Satoshi-Regular.woff") format("woff"), url("/public/assets/fonts/Satoshi-Regular.ttf") format("truetype");
+  src: url("/assets/fonts/Satoshi-Regular.woff2") format("woff2"), url("/assets/fonts/Satoshi-Regular.woff") format("woff"), url("/assets/fonts/Satoshi-Regular.ttf") format("truetype");
   font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: "Satoshi-Medium";
-  src: url("/public/assets/fonts/Satoshi-Medium.woff2") format("woff2"), url("/public/assets/fonts/Satoshi-Medium.woff") format("woff"), url("/public/assets/fonts/Satoshi-Medium.ttf") format("truetype");
+  src: url("/assets/fonts/Satoshi-Medium.woff2") format("woff2"), url("/assets/fonts/Satoshi-Medium.woff") format("woff"), url("/assets/fonts/Satoshi-Medium.ttf") format("truetype");
   font-weight: 500;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: "Satoshi-Bold";
-  src: url("/public/assets/fonts/Satoshi-Bold.woff2") format("woff2"), url("/public/assets/fonts/Satoshi-Bold.woff") format("woff"), url("/public/assets/fonts/Satoshi-Bold.ttf") format("truetype");
+  src: url("/assets/fonts/Satoshi-Bold.woff2") format("woff2"), url("/assets/fonts/Satoshi-Bold.woff") format("woff"), url("/assets/fonts/Satoshi-Bold.ttf") format("truetype");
   font-weight: 700;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: "Satoshi-Black";
-  src: url("/public/assets/fonts/Satoshi-Black.woff2") format("woff2"), url("/public/assets/fonts/Satoshi-Black.woff") format("woff"), url("/public/assets/fonts/Satoshi-Black.ttf") format("truetype");
+  src: url("/assets/fonts/Satoshi-Black.woff2") format("woff2"), url("/assets/fonts/Satoshi-Black.woff") format("woff"), url("/assets/fonts/Satoshi-Black.ttf") format("truetype");
   font-weight: 900;
   font-display: swap;
   font-style: normal;
@@ -129,6 +141,9 @@ p {
 .about .divider {
   height: 1px;
   background-image: linear-gradient(90deg, rgba(229, 231, 235, 0) 0%, rgb(229, 231, 235) 50%, rgba(229, 231, 235, 0) 100%);
+}
+.about .about-social h2 {
+  display: none;
 }
 .about .about-icons {
   display: flex;
@@ -168,6 +183,29 @@ p {
   }
   .about .about-content .bio {
     display: block;
+    margin: 3rem 0;
+  }
+  .about .about-content .bio p {
+    margin: 0.5rem 0;
+  }
+  .about .divider {
+    display: none;
+  }
+  .about .about-social h2 {
+    display: block;
+  }
+  .about .about-social .about-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .about .about-social .about-icons .list-item:hover img {
+    filter: brightness(0) saturate(100%) invert(33%) sepia(11%) saturate(1080%) hue-rotate(176deg) brightness(90%) contrast(90%);
+  }
+  .about .about-social .about-icons .list-item span {
+    margin-left: 0.75rem;
+    font-weight: 500;
   }
 }
 .btn-cta {
@@ -187,6 +225,7 @@ p {
 }
 .btn-cta:hover {
   filter: brightness(0) saturate(100%) invert(13%) sepia(78%) saturate(4732%) hue-rotate(324deg) brightness(94%) contrast(89%);
+  color: ​ #be185d;
 }
 
 .floating-list {
@@ -260,8 +299,6 @@ header .navbar {
   header .navbar {
     position: sticky;
     display: flex;
-    align-items: center;
-    width: 4rem;
     font-size: 0.875rem;
     font-weight: 700;
     line-height: 1.75rem;
@@ -271,7 +308,9 @@ header .navbar {
     padding: 3rem 0;
   }
   header .navbar .nav-items {
+    width: 4rem;
     display: flex;
+    align-items: center;
     column-gap: 1.5rem;
   }
   header .navbar .nav-items > li > span {

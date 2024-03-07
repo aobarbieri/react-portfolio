@@ -14,5 +14,6 @@
 	}
 	&:hover {
 		filter: brightness(0) saturate(100%) invert(13%) sepia(78%) saturate(4732%) hue-rotate(324deg) brightness(94%) contrast(89%);
+		color: $brand-primary-hover;
 	}
 }

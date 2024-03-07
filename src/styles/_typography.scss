@@ -1,12 +1,17 @@
 h1 {
 	font-weight: 700;
 	font-size: 1.25rem;
+	color: $font-color-tertiary;
 }
 
 h2 {
+	font-size: 0.875rem;
+	color: $font-color-tertiary;
 }
 
 h3 {
+	font-size: 1.5rem;
+	color: $font-color-tertiary;
 }
 
 p {
@@ -24,8 +29,8 @@ p {
 
 @font-face {
 	font-family: 'Satoshi-Variable';
-	src: url('/public/assets/fonts/Satoshi-Variable.woff2') format('woff2'), url('/public/assets/fonts/Satoshi-Variable.woff') format('woff'),
-		url('/public/assets/fonts/Satoshi-Variable.ttf') format('truetype');
+	src: url('/assets/fonts/Satoshi-Variable.woff2') format('woff2'), url('/assets/fonts/Satoshi-Variable.woff') format('woff'),
+		url('/assets/fonts/Satoshi-Variable.ttf') format('truetype');
 	font-weight: 300 900;
 	font-display: swap;
 	font-style: normal;
@@ -33,8 +38,8 @@ p {
 
 @font-face {
 	font-family: 'Satoshi-Light';
-	src: url('/public/assets/fonts/Satoshi-Light.woff2') format('woff2'), url('/public/assets/fonts/Satoshi-Light.woff') format('woff'),
-		url('/public/assets/fonts/Satoshi-Light.ttf') format('truetype');
+	src: url('/assets/fonts/Satoshi-Light.woff2') format('woff2'), url('/assets/fonts/Satoshi-Light.woff') format('woff'),
+		url('/assets/fonts/Satoshi-Light.ttf') format('truetype');
 	font-weight: 300;
 	font-display: swap;
 	font-style: normal;
@@ -42,8 +47,8 @@ p {
 
 @font-face {
 	font-family: 'Satoshi-Regular';
-	src: url('/public/assets/fonts/Satoshi-Regular.woff2') format('woff2'), url('/public/assets/fonts/Satoshi-Regular.woff') format('woff'),
-		url('/public/assets/fonts/Satoshi-Regular.ttf') format('truetype');
+	src: url('/assets/fonts/Satoshi-Regular.woff2') format('woff2'), url('/assets/fonts/Satoshi-Regular.woff') format('woff'),
+		url('/assets/fonts/Satoshi-Regular.ttf') format('truetype');
 	font-weight: 400;
 	font-display: swap;
 	font-style: normal;
@@ -51,8 +56,8 @@ p {
 
 @font-face {
 	font-family: 'Satoshi-Medium';
-	src: url('/public/assets/fonts/Satoshi-Medium.woff2') format('woff2'), url('/public/assets/fonts/Satoshi-Medium.woff') format('woff'),
-		url('/public/assets/fonts/Satoshi-Medium.ttf') format('truetype');
+	src: url('/assets/fonts/Satoshi-Medium.woff2') format('woff2'), url('/assets/fonts/Satoshi-Medium.woff') format('woff'),
+		url('/assets/fonts/Satoshi-Medium.ttf') format('truetype');
 	font-weight: 500;
 	font-display: swap;
 	font-style: normal;
@@ -60,8 +65,8 @@ p {
 
 @font-face {
 	font-family: 'Satoshi-Bold';
-	src: url('/public/assets/fonts/Satoshi-Bold.woff2') format('woff2'), url('/public/assets/fonts/Satoshi-Bold.woff') format('woff'),
-		url('/public/assets/fonts/Satoshi-Bold.ttf') format('truetype');
+	src: url('/assets/fonts/Satoshi-Bold.woff2') format('woff2'), url('/assets/fonts/Satoshi-Bold.woff') format('woff'),
+		url('/assets/fonts/Satoshi-Bold.ttf') format('truetype');
 	font-weight: 700;
 	font-display: swap;
 	font-style: normal;
@@ -69,8 +74,8 @@ p {
 
 @font-face {
 	font-family: 'Satoshi-Black';
-	src: url('/public/assets/fonts/Satoshi-Black.woff2') format('woff2'), url('/public/assets/fonts/Satoshi-Black.woff') format('woff'),
-		url('/public/assets/fonts/Satoshi-Black.ttf') format('truetype');
+	src: url('/assets/fonts/Satoshi-Black.woff2') format('woff2'), url('/assets/fonts/Satoshi-Black.woff') format('woff'),
+		url('/assets/fonts/Satoshi-Black.ttf') format('truetype');
 	font-weight: 900;
 	font-display: swap;
 	font-style: normal;

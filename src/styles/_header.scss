@@ -19,8 +19,6 @@ header {
 		.navbar {
 			position: sticky;
 			display: flex;
-			align-items: center;
-			width: 4rem;
 			font-size: 0.875rem;
 			font-weight: 700;
 			line-height: 1.75rem;
@@ -29,7 +27,9 @@ header {
 			white-space: nowrap;
 			padding: 3rem 0;
 			.nav-items {
+				width: 4rem;
 				display: flex;
+				align-items: center;
 				column-gap: 1.5rem;
 				> li > span {
 					color: $gray;

@@ -25,32 +25,35 @@ export default function About() {
 				<h1>{about.name}</h1>
 				<p className='pitch'>{about.pitch}</p>
 				<div className='bio'>
-					<span>About</span>
+					<h2>About</h2>
 					<p>{about.bio}</p>
 					<button className='btn-cta'>Show more</button>
 				</div>
 			</div>
 			<div className='divider'></div>
-			<ul className='about-icons'>
-				<li className='list-item'>
-					<a href='https://www.linkedin.com/in/amanda-mitzian/' target='_blank' rel='noreferrer'>
-						<img src={linkedin} alt='' />
-						<span>LinkedIn</span>
-					</a>
-				</li>
-				<li className='list-item'>
-					<a href='https://github.com/aobarbieri' target='_blank' rel='noreferrer'>
-						<img src={github} alt='' />
-						<span>GitHub</span>
-					</a>
-				</li>
-				<li className='list-item'>
-					<a href='' target='_blank' rel='noreferrer'>
-						<img src={email} alt='' />
-						<span>Email</span>
-					</a>
-				</li>
-			</ul>
+			<div className='about-social'>
+				<h2>Social</h2>
+				<ul className='about-icons'>
+					<li className='list-item'>
+						<a href='https://www.linkedin.com/in/amanda-mitzian/' target='_blank' rel='noreferrer'>
+							<img src={linkedin} alt='' />
+							<span>LinkedIn</span>
+						</a>
+					</li>
+					<li className='list-item'>
+						<a href='https://github.com/aobarbieri' target='_blank' rel='noreferrer'>
+							<img src={github} alt='' />
+							<span>GitHub</span>
+						</a>
+					</li>
+					<li className='list-item'>
+						<a href='' target='_blank' rel='noreferrer'>
+							<img src={email} alt='' />
+							<span>Email</span>
+						</a>
+					</li>
+				</ul>
+			</div>
 		</section>
 	)
 	return about ? loaded() : ''
