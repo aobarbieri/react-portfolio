@@ -6,6 +6,7 @@ import email from '/assets/icons/email.svg'
 
 export default function About() {
 	const [about, setAbout] = useState(null)
+	const [toggle, setToggle] = useState(true)
 
 	const getAboutData = async () => {
 		const res = await fetch('./about.json')
@@ -15,6 +16,10 @@ export default function About() {
 	useEffect(() => {
 		getAboutData()
 	}, [])
+
+	const setToggleClass = () => {
+		setToggle(false)
+	}
 
 	const loaded = () => (
 		<section className='about'>
@@ -26,8 +31,12 @@ export default function About() {
 				<p className='pitch'>{about.pitch}</p>
 				<div className='bio'>
 					<h2>About</h2>
-					<p>{about.bio}</p>
-					<button className='btn-cta'>Show more</button>
+					<p className={toggle ? 'line-clamp' : ''} id='clamp'>
+						{about.bio}
+					</p>
+					<button onClick={setToggleClass} className={`${!toggle ? 'hidden' : ''} btn-cta`}>
+						Show more
+					</button>
 				</div>
 			</div>
 			<div className='divider'></div>

@@ -188,6 +188,12 @@ p {
   .about .about-content .bio p {
     margin: 0.5rem 0;
   }
+  .about .about-content .bio .line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
   .about .divider {
     display: none;
   }
@@ -447,4 +453,8 @@ header .navbar {
 
 .flex {
   display: flex;
+}
+
+.hidden {
+  display: none;
 }
