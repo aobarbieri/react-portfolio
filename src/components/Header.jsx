@@ -1,6 +1,6 @@
 import About from './About'
 
-export default function Header() {
+export default function Header({ about }) {
 	return (
 		<header>
 			<nav className='navbar'>
@@ -16,7 +16,7 @@ export default function Header() {
 					<li>Contact</li>
 				</ul>
 			</nav>
-			<About />
+			<About about={about} />
 		</header>
 	)
 }

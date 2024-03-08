@@ -1,27 +1,17 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import avatar from '/assets/amanda.png'
 import github from '/assets/brands/github.svg'
 import linkedin from '/assets/brands/linkedin.svg'
 import email from '/assets/icons/email.svg'
 
-export default function About() {
-	const [about, setAbout] = useState(null)
+export default function About({ about }) {
 	const [toggle, setToggle] = useState(true)
-
-	const getAboutData = async () => {
-		const res = await fetch('./about.json')
-		const data = await res.json()
-		setAbout(data)
-	}
-	useEffect(() => {
-		getAboutData()
-	}, [])
 
 	const setToggleClass = () => {
 		setToggle(false)
 	}
 
-	const loaded = () => (
+	return (
 		<section className='about'>
 			<div className='avatar'>
 				<img src={avatar} alt="Amanda's Avatar" />
@@ -65,5 +55,4 @@ export default function About() {
 			</div>
 		</section>
 	)
-	return about ? loaded() : ''
 }

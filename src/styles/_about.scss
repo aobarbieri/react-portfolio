@@ -55,6 +55,21 @@
 		}
 	}
 }
+
+.bio-mobile {
+	margin: 3rem 0;
+	h2 {
+		position: relative;
+		&::before {
+			content: url('/assets/icons/rocket.svg');
+			margin-right: 0.525rem;
+		}
+	}
+	p {
+		margin: 0.5rem 0;
+	}
+}
+
 @media screen and (min-width: 640px) {
 	.about {
 		.about-icons {
@@ -127,5 +142,8 @@
 				}
 			}
 		}
+	}
+	.bio-mobile {
+		display: none;
 	}
 }
