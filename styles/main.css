@@ -115,15 +115,16 @@ p {
 }
 .about .avatar {
   margin: 0 auto;
-  background-color: #fff;
-  border: 1px solid #e5e7eb;
-  border-radius: 0.7rem;
-  padding: 1rem;
-  width: 14rem;
+  width: 12rem;
 }
 .about .avatar > img {
+  border: 1px solid #e5e7eb;
+  border-radius: 0.7rem;
   width: 12rem;
   height: 12rem;
+  box-shadow: 1px 60px 83px -47px rgba(0, 0, 0, 0.53);
+  -webkit-box-shadow: 1px 60px 83px -47px rgba(0, 0, 0, 0.53);
+  -moz-box-shadow: 1px 60px 83px -47px rgba(0, 0, 0, 0.53);
 }
 .about .about-content {
   margin: 2.5rem 0;
@@ -185,6 +186,13 @@ p {
     display: block;
     margin: 3rem 0;
   }
+  .about .about-content .bio h2 {
+    position: relative;
+  }
+  .about .about-content .bio h2::before {
+    content: url("/assets/icons/rocket.svg");
+    margin-right: 0.525rem;
+  }
   .about .about-content .bio p {
     margin: 0.5rem 0;
   }
@@ -199,6 +207,10 @@ p {
   }
   .about .about-social h2 {
     display: block;
+  }
+  .about .about-social h2::before {
+    content: url("/assets/icons/stars.svg");
+    margin-right: 0.525rem;
   }
   .about .about-social .about-icons {
     display: flex;

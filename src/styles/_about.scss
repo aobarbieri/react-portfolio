@@ -3,14 +3,15 @@
 	border-bottom: 1px solid $gray-lighter;
 	.avatar {
 		margin: 0 auto;
-		background-color: $brand-default;
-		border: 1px solid $gray-lighter;
-		border-radius: 0.7rem;
-		padding: 1rem;
-		width: 14rem;
+		width: 12rem;
 		> img {
+			border: 1px solid $gray-lighter;
+			border-radius: 0.7rem;
 			width: 12rem;
 			height: 12rem;
+			box-shadow: 1px 60px 83px -47px rgba(0, 0, 0, 0.53);
+			-webkit-box-shadow: 1px 60px 83px -47px rgba(0, 0, 0, 0.53);
+			-moz-box-shadow: 1px 60px 83px -47px rgba(0, 0, 0, 0.53);
 		}
 	}
 	.about-content {
@@ -79,6 +80,13 @@
 			.bio {
 				display: block;
 				margin: 3rem 0;
+				h2 {
+					position: relative;
+					&::before {
+						content: url('/assets/icons/rocket.svg');
+						margin-right: 0.525rem;
+					}
+				}
 				p {
 					margin: 0.5rem 0;
 				}
@@ -96,6 +104,10 @@
 		.about-social {
 			h2 {
 				display: block;
+				&::before {
+					content: url('/assets/icons/stars.svg');
+					margin-right: 0.525rem;
+				}
 			}
 			.about-icons {
 				display: flex;

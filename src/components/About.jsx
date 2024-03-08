@@ -30,7 +30,7 @@ export default function About() {
 				<h1>{about.name}</h1>
 				<p className='pitch'>{about.pitch}</p>
 				<div className='bio'>
-					<h2>About</h2>
+					<h2 className='noto-sans'>About</h2>
 					<p className={toggle ? 'line-clamp' : ''} id='clamp'>
 						{about.bio}
 					</p>
@@ -41,7 +41,7 @@ export default function About() {
 			</div>
 			<div className='divider'></div>
 			<div className='about-social'>
-				<h2>Social</h2>
+				<h2 className='noto-sans'>Social</h2>
 				<ul className='about-icons'>
 					<li className='list-item'>
 						<a href='https://www.linkedin.com/in/amanda-mitzian/' target='_blank' rel='noreferrer'>
