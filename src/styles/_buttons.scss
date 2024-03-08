@@ -9,8 +9,9 @@
 	color: $brand-primary;
 	cursor: pointer;
 	img {
-		width: 0.625rem;
-		height: 0.625rem;
+		width: 0.875rem;
+		height: 0.875rem;
+		margin-right: 0.75rem;
 	}
 	&:hover {
 		filter: brightness(0) saturate(100%) invert(13%) sepia(78%) saturate(4732%) hue-rotate(324deg) brightness(94%) contrast(89%);
