@@ -1,25 +1,22 @@
-import { Link } from 'react-router-dom'
+import About from './About'
 
-export default function Header() {
+export default function Header({ about }) {
 	return (
-		<header className='fixed'>
+		<header>
 			<nav className='navbar'>
-				<Link to='/'>
-					<h3 className=''>Amanda Mitzian</h3>
-				</Link>
-
-				<ul className='flex nav-items'>
-					<li>
-						<Link to='/projects'>Projects</Link>
-					</li>
+				<ul className='nav-items'>
 					<li>
 						<a href='https://drive.google.com/file/d/1zhjTywdUQ9HmZyuEaP6MT1hUastRY-n9/view?usp=sharing' target='_blank' rel='noreferrer'>
 							Resume
 						</a>
 					</li>
-					{/* <li>Contact</li> */}
+					<li>
+						<span>/</span>
+					</li>
+					<li>Contact</li>
 				</ul>
 			</nav>
+			<About about={about} />
 		</header>
 	)
 }

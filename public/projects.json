@@ -6,6 +6,7 @@
 		"git": "https://github.com/aobarbieri/mix-it-up-2.0",
 		"image": "/assets/images/mix-it-up.png",
 		"description": "Input your ingredients, and Mix It Up generates tailored drink recipes from a vast database, saving you from endless searches.",
+		"type": "Front-end",
 		"tech": {
 			"html": false,
 			"css": true,
@@ -27,6 +28,7 @@
 		"git": "https://github.com/aobarbieri/LuminaTask",
 		"image": "/assets/images/food&stuff.png",
 		"description": "User-friendly platform that enables users to effortlessly create lists based on their preferences and needs.",
+		"type": "Full-stack",
 		"tech": {
 			"html": false,
 			"css": true,
@@ -48,6 +50,7 @@
 		"git": "https://github.com/smackeem/Animal_Kingdom_Project_2",
 		"image": "/assets/images/animal-kingdom.png",
 		"description": "Streamlining the pet care experience for owners and veterinarians alike. Enjoy stress-free management of your pet's health.",
+		"type": "Full-stack",
 		"tech": {
 			"html": false,
 			"css": true,
@@ -69,6 +72,7 @@
 		"git": "https://github.com/aobarbieri/doxie-game",
 		"image": "/assets/images/doxie-dash.png",
 		"description": "Play as an elongated dachshund in Doxie Dash, exploring a doggy-themed snake game.",
+		"type": "Front-end",
 		"tech": {
 			"html": true,
 			"css": true,
@@ -90,6 +94,7 @@
 		"git": "https://github.com/aobarbieri/allmetro",
 		"image": "/assets/images/all-metro.png",
 		"description": "Your go-to in Piracicaba - Brazil, for training, consulting, calibration, maintenance, and sales of residential and commercial scales.",
+		"type": "Front-end",
 		"tech": {
 			"html": true,
 			"css": true,
@@ -111,6 +116,7 @@
 		"git": "https://github.com/aobarbieri/studion",
 		"image": "/assets/images/studion.png",
 		"description": "Impress your audience with seamless product launches and campaign introductions. Studion Events welcomes businesses and non-profits to trust them with their upcoming events.",
+		"type": "Front-end",
 		"tech": {
 			"html": true,
 			"css": true,

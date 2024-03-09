@@ -1,26 +1,32 @@
-import { Route, Routes } from 'react-router-dom'
-import Home from './components/Home'
+import { useState, useEffect } from 'react'
 import Header from './components/Header'
-import Footer from './components/Footer'
-import Contact from './components/Contact'
-import About from './components/About'
 import Projects from './components/Projects'
+import Skills from './components/Skills'
+import Footer from './components/Footer'
 
 function App() {
-	return (
+	const [about, setAbout] = useState(null)
+
+	const getAboutData = async () => {
+		const res = await fetch('./about.json')
+		const data = await res.json()
+		setAbout(data)
+	}
+	useEffect(() => {
+		getAboutData()
+	}, [])
+
+	const loaded = () => (
 		<>
-			<Header />
-			<Contact />
-			<main className='container'>
-				<Routes>
-					<Route exact path='/' element={<Home />} />
-					<Route path='/about' element={<About />} />
-					<Route path='/projects' element={<Projects />} />
-				</Routes>
+			<Header about={about} />
+			<main className='main'>
+				<Projects />
+				<Skills />
 			</main>
-			<Footer />
+			<Footer about={about} />
 		</>
 	)
+	return about ? loaded() : ''
 }
 
 export default App
