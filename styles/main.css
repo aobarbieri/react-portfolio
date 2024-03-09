@@ -37,6 +37,9 @@ a {
     margin-left: 30rem;
     margin-bottom: 7rem;
   }
+  footer {
+    margin-left: 30rem;
+  }
 }
 h1 {
   font-weight: 700;
@@ -173,20 +176,6 @@ p {
   display: none;
 }
 
-.bio-mobile {
-  margin: 3rem 0;
-}
-.bio-mobile h2 {
-  position: relative;
-}
-.bio-mobile h2::before {
-  content: url("/assets/icons/rocket.svg");
-  margin-right: 0.525rem;
-}
-.bio-mobile p {
-  margin: 0.5rem 0;
-}
-
 @media screen and (min-width: 640px) {
   .about .about-icons li a span {
     display: block;
@@ -314,12 +303,40 @@ p {
 }
 .footer {
   text-align: center;
-  padding: 1.3rem 0;
+  padding: 2.5rem 1rem 10rem;
+  background-color: #f8fafc;
+  border-top: 0.5px solid #e5e7eb;
 }
-.footer p {
-  font-size: 0.875rem;
+.footer .bio-mobile {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+.footer .bio-mobile h2 {
+  position: relative;
+}
+.footer .bio-mobile h2::before {
+  content: url("/assets/icons/rocket.svg");
+  margin-right: 0.525rem;
+}
+.footer .bio-mobile p {
+  margin: 0.5rem 0;
+}
+.footer .signature p {
+  font-size: 0.675rem;
 }
 
+@media screen and (min-width: 1024px) {
+  .footer {
+    padding: 1.2rem 0;
+    background-color: #fff;
+  }
+  .footer .bio-mobile {
+    display: none;
+  }
+  .footer .signature p {
+    font-size: 0.775rem;
+  }
+}
 header {
   background-color: #f8fafc;
   z-index: 20;

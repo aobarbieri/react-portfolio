@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react'
 import Header from './components/Header'
 import Projects from './components/Projects'
 import Skills from './components/Skills'
-import Bio from './components/Bio'
 import Footer from './components/Footer'
 
 function App() {
@@ -24,8 +23,7 @@ function App() {
 				<Projects />
 				<Skills />
 			</main>
-			<Bio about={about} />
-			<Footer />
+			<Footer about={about} />
 		</>
 	)
 	return about ? loaded() : ''

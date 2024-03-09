@@ -1,7 +1,40 @@
 .footer {
 	text-align: center;
-	padding: 1.3rem 0;
-	p {
-		font-size: 0.875rem;
+	padding: 2.5rem 1rem 10rem;
+	background-color: $brand-secondary;
+	border-top: 0.5px solid $gray-lighter;
+	.bio-mobile {
+		text-align: left;
+		margin-bottom: 2rem;
+		h2 {
+			position: relative;
+			&::before {
+				content: url('/assets/icons/rocket.svg');
+				margin-right: 0.525rem;
+			}
+		}
+		p {
+			margin: 0.5rem 0;
+		}
+	}
+	.signature {
+		p {
+			font-size: 0.675rem;
+		}
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.footer {
+		padding: 1.2rem 0;
+		background-color: $brand-default;
+		.bio-mobile {
+			display: none;
+		}
+		.signature {
+			p {
+				font-size: 0.775rem;
+			}
+		}
 	}
 }
