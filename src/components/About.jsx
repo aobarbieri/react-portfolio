@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import PropTypes from 'prop-types'
 import avatar from '/assets/amanda.png'
 import github from '/assets/brands/github.svg'
 import linkedin from '/assets/brands/linkedin.svg'
@@ -56,4 +57,8 @@ export default function About({ about }) {
 			</div>
 		</section>
 	)
+}
+
+About.propTypes = {
+	about: PropTypes.string.isRequired, //  'about' prop is required and should be a string
 }

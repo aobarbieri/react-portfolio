@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 export default function Bio({ about }) {
 	return (
 		<section className='bio bio-mobile'>
@@ -5,4 +6,8 @@ export default function Bio({ about }) {
 			<p>{about.bio}</p>
 		</section>
 	)
+}
+
+Bio.propTypes = {
+	about: PropTypes.string.isRequired, //  'about' prop is required and should be a string
 }

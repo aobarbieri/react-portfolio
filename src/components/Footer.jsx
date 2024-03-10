@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import Bio from './Bio'
 import Nav from './Nav'
 
@@ -11,4 +12,8 @@ export default function Footer({ about }) {
 			</section>
 		</footer>
 	)
+}
+
+Footer.propTypes = {
+	about: PropTypes.string.isRequired, //  'about' prop is required and should be a string
 }
