@@ -1,10 +1,7 @@
 .skills {
-	padding: 4.19rem 0;
-	> h2,
-	h3,
-	ul {
-		width: 92%;
-		margin: 0 auto;
+	padding-top: 4rem;
+	h3 {
+		padding: 0 1rem;
 	}
 	.toolbox {
 		display: grid;
@@ -32,11 +29,6 @@
 
 @media screen and (min-width: 800px) {
 	.skills {
-		> h2,
-		h3,
-		ul {
-			max-width: 66.8rem;
-		}
 		.toolbox {
 			grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
 		}

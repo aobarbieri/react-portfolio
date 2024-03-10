@@ -438,13 +438,10 @@ header .navbar {
   }
 }
 .skills {
-  padding: 4.19rem 0;
+  padding-top: 4rem;
 }
-.skills > h2,
-.skills h3,
-.skills ul {
-  width: 92%;
-  margin: 0 auto;
+.skills h3 {
+  padding: 0 1rem;
 }
 .skills .toolbox {
   display: grid;
@@ -470,11 +467,6 @@ header .navbar {
 }
 
 @media screen and (min-width: 800px) {
-  .skills > h2,
-  .skills h3,
-  .skills ul {
-    max-width: 66.8rem;
-  }
   .skills .toolbox {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   }

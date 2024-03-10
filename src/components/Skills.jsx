@@ -1,10 +1,6 @@
 export default function Skills() {
 	return (
 		<section className='skills'>
-			<h2>
-				Skills
-				<br />& Tools
-			</h2>
 			<h3>My Toolbox & Things I Can Do</h3>
 			<ul className='toolbox'>
 				<li>
@@ -18,6 +14,17 @@ export default function Skills() {
 					Mendix
 				</li>
 				<li>
+					<i className='devicon-javascript-plain'></i> JavaScript
+				</li>
+				<li>
+					<i className='devicon-python-plain'></i>
+					Python
+				</li>
+				<li>
+					<i className='devicon-nodejs-plain'></i>
+					Node.js
+				</li>
+				<li>
 					<i className='devicon-react-original'></i>
 					React
 				</li>
@@ -25,17 +32,13 @@ export default function Skills() {
 					<i className='devicon-nextjs-original'></i>
 					Next.js
 				</li>
-
+				<li>
+					<i className='devicon-django-plain'></i>
+					Django
+				</li>
 				<li>
 					<i className='devicon-express-original'></i>
 					Express.js
-				</li>
-				<li>
-					<i className='devicon-javascript-plain'></i> JavaScript
-				</li>
-				<li>
-					<i className='devicon-python-plain'></i>
-					Python
 				</li>
 				<li>
 					<i className='devicon-mongodb-plain'></i>
@@ -46,20 +49,20 @@ export default function Skills() {
 					PostgreSQL
 				</li>
 				<li>
-					<i className='devicon-css3-plain'></i>
-					CSS
-				</li>
-				<li>
-					<i className='devicon-html5-plain'></i>
-					HTML
-				</li>
-				<li>
 					<i className='devicon-tailwindcss-plain'></i>
 					Tailwind
 				</li>
 				<li>
 					<i className='devicon-sass-original'></i>
 					SASS
+				</li>
+				<li>
+					<i className='devicon-css3-plain'></i>
+					CSS
+				</li>
+				<li>
+					<i className='devicon-html5-plain'></i>
+					HTML
 				</li>
 			</ul>
 		</section>
