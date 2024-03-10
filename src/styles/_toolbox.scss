@@ -10,7 +10,7 @@
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
 		grid-template-rows: repeat(2, auto);
-		row-gap: 10px;
+		row-gap: 0.8rem;
 		justify-content: space-around;
 		align-content: space-around;
 		padding: 2rem;

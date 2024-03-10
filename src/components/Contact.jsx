@@ -1,7 +1,7 @@
-import github from '../assets/brands/github.svg'
-import linkedin from '../assets/brands/linkedin.svg'
+import github from '/assets/brands/github.svg'
+import linkedin from '/assets/brands/linkedin.svg'
 // import email from '../assets/icons/email.svg'
-import resume from '../assets/icons/resume.svg'
+import resume from '/assets/icons/resume.svg'
 
 export default function Contact() {
 	return (

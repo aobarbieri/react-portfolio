@@ -1,0 +1,15 @@
+.navbar {
+	font-size: 0.875rem;
+	font-weight: 700;
+	line-height: 1.75rem;
+	color: $font-color-tertiary;
+	.nav-items {
+		width: 4rem;
+		display: flex;
+		align-items: center;
+		column-gap: 1.5rem;
+		> li > span {
+			color: $gray;
+		}
+	}
+}

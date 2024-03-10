@@ -1,32 +1,59 @@
-import { useState, useEffect } from 'react'
-import avatar from '../assets/avatar.svg'
-import bg from '../assets/avatar-bg.png'
+import { useState } from 'react'
+import avatar from '/assets/amanda.png'
+import github from '/assets/brands/github.svg'
+import linkedin from '/assets/brands/linkedin.svg'
+import email from '/assets/icons/email.svg'
 
-export default function About() {
-	const [about, setAbout] = useState(null)
+export default function About({ about }) {
+	const [toggle, setToggle] = useState(true)
 
-	const getAboutData = async () => {
-		const res = await fetch('./about.json')
-		const data = await res.json()
-		setAbout(data)
+	const setToggleClass = () => {
+		setToggle(false)
 	}
-	useEffect(() => {
-		getAboutData()
-	}, [])
 
-	const loaded = () => (
+	return (
 		<section className='about'>
-			<div className='about-content'>
-				<h1 className=''>Hi, I&apos;m {about.name}</h1>
-				<p>{about.bio}</p>
+			<div className='avatar'>
+				<img src={avatar} alt="Amanda's Avatar" />
 			</div>
-
-			<div className='wrapper'>
-				<img className='avatar' src={avatar} alt="Amanda's Avatar" />
-				<img className='avatar-bg' src={bg} />
+			<div className='about-content'>
+				<h1>{about.name}</h1>
+				<p className='pitch'>{about.pitch}</p>
+				<div className='bio'>
+					<h2 className='noto-sans'>About</h2>
+					<p className={toggle ? 'line-clamp' : ''} id='clamp'>
+						{about.bio}
+					</p>
+					<button onClick={setToggleClass} className={`${!toggle ? 'hidden' : ''} btn-cta`}>
+						Show more
+					</button>
+				</div>
+			</div>
+			<div className='divider'></div>
+			<div className='about-social'>
+				<h2 className='noto-sans'>Social</h2>
+				<ul className='about-icons'>
+					<li className='list-item'>
+						<a href='https://www.linkedin.com/in/amanda-mitzian/' target='_blank' rel='noreferrer'>
+							<img src={linkedin} alt='' />
+							<span>LinkedIn</span>
+						</a>
+					</li>
+					<li className='list-item'>
+						<a href='https://github.com/aobarbieri' target='_blank' rel='noreferrer'>
+							<img src={github} alt='' />
+							<span>GitHub</span>
+						</a>
+					</li>
+					<li className='list-item'>
+						<a href='' target='_blank' rel='noreferrer'>
+							<img src={email} alt='' />
+							<span>Email</span>
+							{/* fix this */}
+						</a>
+					</li>
+				</ul>
 			</div>
 		</section>
 	)
-
-	return about ? loaded() : ''
 }
