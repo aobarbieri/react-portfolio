@@ -17,23 +17,13 @@ header {
 		align-items: flex-start;
 		overflow-y: auto;
 		.navbar {
-			position: sticky;
 			display: flex;
-			font-size: 0.875rem;
-			font-weight: 700;
-			line-height: 1.75rem;
-			color: $font-color-tertiary;
+			position: sticky;
 			writing-mode: vertical-rl;
 			white-space: nowrap;
 			padding: 3rem 0;
 			.nav-items {
 				width: 4rem;
-				display: flex;
-				align-items: center;
-				column-gap: 1.5rem;
-				> li > span {
-					color: $gray;
-				}
 			}
 		}
 	}

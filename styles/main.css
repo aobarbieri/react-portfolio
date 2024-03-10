@@ -119,6 +119,112 @@ p {
   font-display: swap;
   font-style: normal;
 }
+.btn-cta {
+  border: 0;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  color: #ec4899;
+  cursor: pointer;
+}
+.btn-cta img {
+  width: 0.875rem;
+  height: 0.875rem;
+  margin-right: 0.75rem;
+}
+.btn-cta:hover {
+  filter: brightness(0) saturate(100%) invert(13%) sepia(78%) saturate(4732%) hue-rotate(324deg) brightness(94%) contrast(89%);
+  color: ​ #be185d;
+}
+
+header {
+  background-color: #f8fafc;
+  z-index: 20;
+}
+header .navbar {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 30rem;
+    display: flex;
+    align-items: flex-start;
+    overflow-y: auto;
+  }
+  header .navbar {
+    display: flex;
+    position: sticky;
+    writing-mode: vertical-rl;
+    white-space: nowrap;
+    padding: 3rem 0;
+  }
+  header .navbar .nav-items {
+    width: 4rem;
+  }
+}
+.footer {
+  padding: 2.5rem 1rem 10rem;
+  background-color: #f8fafc;
+  border-top: 0.5px solid #e5e7eb;
+}
+.footer .bio-mobile {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+.footer .bio-mobile h2 {
+  position: relative;
+}
+.footer .bio-mobile h2::before {
+  content: url("/assets/icons/rocket.svg");
+  margin-right: 0.525rem;
+}
+.footer .bio-mobile p {
+  margin: 0.5rem 0;
+}
+.footer .signature p {
+  font-size: 0.675rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .footer {
+    text-align: center;
+    padding: 1.2rem 0;
+    background-color: #fff;
+  }
+  .footer .bio-mobile {
+    display: none;
+  }
+  .footer .navbar {
+    display: none;
+  }
+  .footer .signature p {
+    font-size: 0.775rem;
+  }
+}
+.navbar {
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.75rem;
+  color: #0f172a;
+}
+.navbar .nav-items {
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+.navbar .nav-items > li > span {
+  color: #94a3b8;
+}
+
 .about {
   padding: 2.5rem 1rem 1rem;
   border-bottom: 1px solid #e5e7eb;
@@ -239,27 +345,6 @@ p {
     display: none;
   }
 }
-.btn-cta {
-  border: 0;
-  background-color: transparent;
-  display: flex;
-  align-items: center;
-  font-size: 0.875rem;
-  line-height: 1.5rem;
-  font-weight: 700;
-  color: #ec4899;
-  cursor: pointer;
-}
-.btn-cta img {
-  width: 0.875rem;
-  height: 0.875rem;
-  margin-right: 0.75rem;
-}
-.btn-cta:hover {
-  filter: brightness(0) saturate(100%) invert(13%) sepia(78%) saturate(4732%) hue-rotate(324deg) brightness(94%) contrast(89%);
-  color: ​ #be185d;
-}
-
 .floating-list {
   display: none;
 }
@@ -299,82 +384,6 @@ p {
   }
   .floating-list .list-item:hover {
     right: 0;
-  }
-}
-.footer {
-  text-align: center;
-  padding: 2.5rem 1rem 10rem;
-  background-color: #f8fafc;
-  border-top: 0.5px solid #e5e7eb;
-}
-.footer .bio-mobile {
-  text-align: left;
-  margin-bottom: 2rem;
-}
-.footer .bio-mobile h2 {
-  position: relative;
-}
-.footer .bio-mobile h2::before {
-  content: url("/assets/icons/rocket.svg");
-  margin-right: 0.525rem;
-}
-.footer .bio-mobile p {
-  margin: 0.5rem 0;
-}
-.footer .signature p {
-  font-size: 0.675rem;
-}
-
-@media screen and (min-width: 1024px) {
-  .footer {
-    padding: 1.2rem 0;
-    background-color: #fff;
-  }
-  .footer .bio-mobile {
-    display: none;
-  }
-  .footer .signature p {
-    font-size: 0.775rem;
-  }
-}
-header {
-  background-color: #f8fafc;
-  z-index: 20;
-}
-header .navbar {
-  display: none;
-}
-
-@media screen and (min-width: 1024px) {
-  header {
-    position: fixed;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 30rem;
-    display: flex;
-    align-items: flex-start;
-    overflow-y: auto;
-  }
-  header .navbar {
-    position: sticky;
-    display: flex;
-    font-size: 0.875rem;
-    font-weight: 700;
-    line-height: 1.75rem;
-    color: #0f172a;
-    writing-mode: vertical-rl;
-    white-space: nowrap;
-    padding: 3rem 0;
-  }
-  header .navbar .nav-items {
-    width: 4rem;
-    display: flex;
-    align-items: center;
-    column-gap: 1.5rem;
-  }
-  header .navbar .nav-items > li > span {
-    color: #94a3b8;
   }
 }
 .projects {

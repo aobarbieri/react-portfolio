@@ -49,6 +49,7 @@ export default function About({ about }) {
 						<a href='' target='_blank' rel='noreferrer'>
 							<img src={email} alt='' />
 							<span>Email</span>
+							{/* fix this */}
 						</a>
 					</li>
 				</ul>

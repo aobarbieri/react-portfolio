@@ -1,5 +1,4 @@
 .footer {
-	text-align: center;
 	padding: 2.5rem 1rem 10rem;
 	background-color: $brand-secondary;
 	border-top: 0.5px solid $gray-lighter;
@@ -26,9 +25,13 @@
 
 @media screen and (min-width: 1024px) {
 	.footer {
+		text-align: center;
 		padding: 1.2rem 0;
 		background-color: $brand-default;
 		.bio-mobile {
+			display: none;
+		}
+		.navbar {
 			display: none;
 		}
 		.signature {
