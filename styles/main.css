@@ -498,7 +498,7 @@ header .navbar {
   row-gap: 0.8rem;
   justify-content: space-around;
   align-content: space-around;
-  padding: 2rem;
+  padding: 2rem 0;
 }
 .skills .toolbox li {
   display: flex;
@@ -515,8 +515,20 @@ header .navbar {
 }
 
 @media screen and (min-width: 800px) {
+  .skills {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .skills > div {
+    max-width: 56rem;
+  }
+  .skills > div > div {
+    margin: 0 auto;
+    max-width: 42rem;
+  }
   .skills .toolbox {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    row-gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
   }
 }
 .fixed {
