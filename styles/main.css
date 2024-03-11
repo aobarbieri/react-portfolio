@@ -406,8 +406,9 @@ header .navbar {
 }
 .projects {
   padding-top: 4rem;
-  background-image: url("/assets/images/particles.svg");
-  background-repeat: no-repeat;
+  background-image: url("/assets/images/balls.svg");
+  background-repeat: repeat-x;
+  background-position-y: -3%;
 }
 .projects h3 {
   padding: 0 1rem;
@@ -455,6 +456,7 @@ header .navbar {
 @media screen and (min-width: 1024px) {
   .projects {
     padding-top: 3rem;
+    background-position-y: -4%;
   }
   .projects > div {
     max-width: 56rem;
@@ -464,7 +466,7 @@ header .navbar {
     max-width: 42rem;
   }
   .projects > div > div h3 {
-    padding: 0;
+    padding: 0 1rem;
   }
   .projects .projects-wrapper:first-of-type {
     margin-top: 2rem;

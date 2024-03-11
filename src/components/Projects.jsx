@@ -13,8 +13,6 @@ import mongodb from '/assets/brands/mongodb.svg'
 import mongoose from '/assets/brands/mongoose.svg'
 import postgre from '/assets/brands/postgre.svg'
 
-import particles from '/assets/images/particles.svg'
-
 export default function Projects() {
 	const [projects, setProjects] = useState(null)
 
