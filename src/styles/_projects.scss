@@ -1,5 +1,7 @@
 .projects {
 	padding-top: 4rem;
+	background-image: url('/assets/images/particles.svg');
+	background-repeat: no-repeat;
 	h3 {
 		padding: 0 1rem;
 	}
@@ -48,5 +50,30 @@
 @media screen and (min-width: 1024px) {
 	.projects {
 		padding-top: 3rem;
+		> div {
+			max-width: 56rem;
+			> div {
+				margin: 0 auto;
+				max-width: 42rem;
+				h3 {
+					padding: 0;
+				}
+			}
+		}
+		.projects-wrapper:first-of-type {
+			margin-top: 2rem;
+			border-top: 0.5px solid $gray-lighter;
+		}
+		.projects-wrapper {
+			padding-left: 2rem;
+			padding-right: 2rem;
+			> div {
+				max-width: 56rem;
+				> div {
+					margin: 0 auto;
+					max-width: 42rem;
+				}
+			}
+		}
 	}
 }

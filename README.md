@@ -12,6 +12,11 @@ Hello there! I'm a Full Stack Web Developer who excels in handling intricate lay
 SASS
 Devicon
 
+## Attributions
+
+The icon "particles" is provided by loading.io
+https://loading.io/icon/
+
 ## Future features
 
 -   Refresh color schemes and styles.
