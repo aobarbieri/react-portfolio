@@ -2,7 +2,7 @@
 
 Hello there! I'm a Full Stack Web Developer who excels in handling intricate layouts and crafting web pages that prioritize user-friendliness and delight.
 
-[amitzian.app](https://amitzian.netlify.app/)
+[amitzian.dev](https://amitzian.dev/)
 
 ## Technologies used
 
@@ -14,7 +14,7 @@ Devicon
 
 ## Attributions
 
-The svg "balls" is provided by loading.io
+Svg used at the top is provided by loading.io
 https://loading.io/icon/
 
 ## Future features
