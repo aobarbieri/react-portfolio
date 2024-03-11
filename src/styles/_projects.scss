@@ -53,12 +53,13 @@
 		padding-top: 3rem;
 		background-position-y: -4%;
 		> div {
-			max-width: 56rem;
+			padding: 0 2rem;
 			> div {
-				margin: 0 auto;
-				max-width: 42rem;
+				max-width: 56rem;
 				h3 {
-					padding: 0 1rem;
+					margin: 0 auto;
+					max-width: 42rem;
+					padding: 0;
 				}
 			}
 		}

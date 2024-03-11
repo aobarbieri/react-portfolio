@@ -459,14 +459,15 @@ header .navbar {
     background-position-y: -4%;
   }
   .projects > div {
-    max-width: 56rem;
+    padding: 0 2rem;
   }
   .projects > div > div {
-    margin: 0 auto;
-    max-width: 42rem;
+    max-width: 56rem;
   }
   .projects > div > div h3 {
-    padding: 0 1rem;
+    margin: 0 auto;
+    max-width: 42rem;
+    padding: 0;
   }
   .projects .projects-wrapper:first-of-type {
     margin-top: 2rem;

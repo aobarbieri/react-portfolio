@@ -14,7 +14,7 @@ Devicon
 
 ## Attributions
 
-The icon "particles" is provided by loading.io
+The svg "balls" is provided by loading.io
 https://loading.io/icon/
 
 ## Future features
