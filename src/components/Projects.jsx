@@ -74,10 +74,16 @@ export default function Projects() {
 										<img src={view} alt='View' />
 										Try it out
 									</a>
-									<span>/</span>
-									<a className='btn-cta' href={project.git} target='_blank' rel='noreferrer'>
-										View repo
-									</a>
+									{project.git === '' ? (
+										''
+									) : (
+										<>
+											<span>/</span>
+											<a className='btn-cta' href={project.git} target='_blank' rel='noreferrer'>
+												View repo
+											</a>
+										</>
+									)}
 								</div>
 							</div>
 						</div>

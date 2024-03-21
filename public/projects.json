@@ -1,10 +1,30 @@
 [
 	{
 		"id": 1,
+		"name": "Budgetwise",
+		"live": "https://myfirstmacapp102-sandbox.mxapps.io/",
+		"git": "",
+		"description": "Empowering you to effortlessly input expenses and income. Seamlessly track finances with intuitive tools designed for financial clarity and control.",
+		"type": "Mendix (WIP)",
+		"tech": {
+			"html": true,
+			"css": true,
+			"sass": true,
+			"tailwind": false,
+			"js": true,
+			"react": false,
+			"nextJs": false,
+			"express": false,
+			"mongodb": false,
+			"mongoose": false,
+			"postgre": false
+		}
+	},
+	{
+		"id": 2,
 		"name": "Mix It Up",
 		"live": "https://mix-itup.netlify.app/",
 		"git": "https://github.com/aobarbieri/mix-it-up-2.0",
-		"image": "/assets/images/mix-it-up.png",
 		"description": "Input your ingredients, and Mix It Up generates tailored drink recipes from a vast database, saving you from endless searches.",
 		"type": "Front-end",
 		"tech": {
@@ -22,11 +42,10 @@
 		}
 	},
 	{
-		"id": 2,
+		"id": 3,
 		"name": "Food&Stuff",
 		"live": "https://lumina-task.vercel.app/",
 		"git": "https://github.com/aobarbieri/LuminaTask",
-		"image": "/assets/images/food&stuff.png",
 		"description": "User-friendly platform that enables users to effortlessly create lists based on their preferences and needs.",
 		"type": "Full-stack",
 		"tech": {
@@ -44,11 +63,10 @@
 		}
 	},
 	{
-		"id": 3,
+		"id": 4,
 		"name": "Animal Kingdom",
 		"live": "https://animalkingdom-67bef32faf2a.herokuapp.com/",
 		"git": "https://github.com/smackeem/Animal_Kingdom_Project_2",
-		"image": "/assets/images/animal-kingdom.png",
 		"description": "Streamlining the pet care experience for owners and veterinarians alike. Enjoy stress-free management of your pet's health.",
 		"type": "Full-stack",
 		"tech": {
@@ -66,11 +84,10 @@
 		}
 	},
 	{
-		"id": 4,
+		"id": 5,
 		"name": "Doxie Dash",
 		"live": "https://aobarbieri.github.io/doxie-game/",
 		"git": "https://github.com/aobarbieri/doxie-game",
-		"image": "/assets/images/doxie-dash.png",
 		"description": "Play as an elongated dachshund in Doxie Dash, exploring a doggy-themed snake game.",
 		"type": "Front-end",
 		"tech": {
@@ -88,11 +105,10 @@
 		}
 	},
 	{
-		"id": 5,
+		"id": 6,
 		"name": "All Metro",
 		"live": "https://allmetro.netlify.app/",
 		"git": "https://github.com/aobarbieri/allmetro",
-		"image": "/assets/images/all-metro.png",
 		"description": "Your go-to in Piracicaba - Brazil, for training, consulting, calibration, maintenance, and sales of residential and commercial scales.",
 		"type": "Front-end",
 		"tech": {
@@ -110,11 +126,10 @@
 		}
 	},
 	{
-		"id": 6,
+		"id": 7,
 		"name": "StudiOn",
 		"live": "https://studion-events.netlify.app/",
 		"git": "https://github.com/aobarbieri/studion",
-		"image": "/assets/images/studion.png",
 		"description": "Impress your audience with seamless product launches and campaign introductions. Studion Events welcomes businesses and non-profits to trust them with their upcoming events.",
 		"type": "Front-end",
 		"tech": {
