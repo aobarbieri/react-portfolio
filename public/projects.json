@@ -4,7 +4,7 @@
 		"name": "Budgetwise",
 		"live": "https://myfirstmacapp102-sandbox.mxapps.io/index.html?profile=Responsive",
 		"git": "",
-		"description": "Being built using Mendix Studio Pro 10.8.1 Beta for Mac. Seamlessly track expenses and income with intuitive tools designed for financial clarity and control.",
+		"description": "Currently being developed with Mendix Studio Pro 10.8.1 Beta for Mac, seamlessly track expenses and income with intuitive tools designed for financial clarity and control.",
 		"type": "Mendix (WIP)",
 		"tech": {
 			"html": true,
