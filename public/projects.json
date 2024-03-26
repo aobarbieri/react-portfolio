@@ -4,8 +4,8 @@
 		"name": "Budgetwise",
 		"live": "https://myfirstmacapp102-sandbox.mxapps.io/index.html?profile=Responsive",
 		"git": "",
-		"description": "Currently being developed with Mendix Studio Pro 10.8.1 Beta for Mac, seamlessly track expenses and income with intuitive tools designed for financial clarity and control.",
-		"type": "Mendix (WIP)",
+		"description": "Currently being developed with Mendix Studio Pro 10.8.1 Beta for Mac. For many, the idea of making a budget is uncomfortable, especially because personal finance is often avoided as a topic of discussion. However, these societal norms aren't mandatory or beneficial. Budgeting empowers you to establish objectives and strive for the financial future you desire for yourself and your loved ones. Mastering expense tracking, crafting a personalized budget, and holding regular budget sessions can significantly transform your life. Budgetwise not only helps you monitor spending but also offers valuable insights into enhancing your monthly habits. Initially, use the first month or a few months to understand your spending patterns and identify your priorities before crafting or updating your budget. ",
+		"type": "Mendix - WIP",
 		"tech": {
 			"html": true,
 			"css": true,
