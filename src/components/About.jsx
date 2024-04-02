@@ -22,9 +22,7 @@ export default function About({ about }) {
 				<p className='pitch'>{about.pitch}</p>
 				<div className='bio'>
 					<h2 className='noto-sans'>About</h2>
-					<p className={toggle ? 'line-clamp' : ''} id='clamp'>
-						{about.bio}
-					</p>
+					<p className={toggle ? 'line-clamp' : ''}>{about.bio}</p>
 					<button onClick={setToggleClass} className={`${!toggle ? 'hidden' : ''} btn-cta`}>
 						Show more
 					</button>

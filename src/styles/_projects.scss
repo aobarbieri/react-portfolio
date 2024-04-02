@@ -17,17 +17,17 @@
 			margin-top: 0.5rem;
 		}
 		.description {
-			margin-top: 0.25rem;
+			margin: 0.25rem 0;
 		}
 		.tech {
-			p {
-				font-size: 0.875rem;
-				color: $font-color-secondary;
-			}
 			display: flex;
 			gap: 0.65rem;
 			align-items: center;
 			padding: 1.25rem 0;
+			p {
+				font-size: 0.875rem;
+				color: $font-color-secondary;
+			}
 			.tech-icon {
 				width: 1.625rem;
 				height: 1.625rem;
@@ -75,6 +75,18 @@
 				> div {
 					margin: 0 auto;
 					max-width: 42rem;
+					.project-content-bottom {
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+						padding: 1.25rem 0;
+						.tech {
+							padding: 0;
+						}
+						.btns {
+							margin: 0;
+						}
+					}
 				}
 			}
 		}

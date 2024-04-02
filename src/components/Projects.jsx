@@ -15,11 +15,21 @@ import postgre from '/assets/brands/postgre.svg'
 
 export default function Projects() {
 	const [projects, setProjects] = useState(null)
+	const [toggle, setToggle] = useState([])
 
 	const getProjectData = async () => {
 		const res = await fetch('./projects.json')
 		const data = await res.json()
 		setProjects(data)
+		setToggle(Array(data.length).fill(true))
+	}
+
+	const toggleDescription = (index) => {
+		setToggle((prevToggle) => {
+			const updatedToggle = [...prevToggle]
+			updatedToggle[index] = !updatedToggle[index] // Toggle state for the clicked project
+			return updatedToggle
+		})
 	}
 
 	useEffect(() => {
@@ -35,55 +45,60 @@ export default function Projects() {
 					</div>
 				</div>
 
-				{projects.map((project) => (
+				{projects.map((project, index) => (
 					<section className='projects-wrapper' key={project.id}>
 						<div>
 							<div>
 								<span className='noto-sans'>{project.type}</span>
 								<h4>{project.name}</h4>
-								<p className='description'>{project.description}</p>
 
-								<div className='tech'>
-									<p>Built with:</p>
+								<p className={`${toggle[index] ? 'line-clamp' : ''} description`}>{project.description}</p>
+								<button onClick={() => toggleDescription(index)} className={`${!toggle[index] ? 'hidden' : ''} btn-cta`}>
+									Show more
+								</button>
 
-									{project.tech.html ? <img className='tech-icon' src={html} alt='HTML' title='HTML' /> : ''}
+								<div className='project-content-bottom'>
+									<div className='btns'>
+										<a className='btn-cta' href={project.live} target='_blank' rel='noreferrer'>
+											<img src={view} alt='View' />
+											Try it out
+										</a>
+										{project.git === '' ? (
+											''
+										) : (
+											<>
+												<span>/</span>
+												<a className='btn-cta' href={project.git} target='_blank' rel='noreferrer'>
+													View repo
+												</a>
+											</>
+										)}
+									</div>
+									<div className='tech'>
+										<p>Built with:</p>
 
-									{project.tech.css ? <img className='tech-icon' src={css} alt='CSS' title='CSS' /> : ''}
+										{project.tech.html ? <img className='tech-icon' src={html} alt='HTML' title='HTML' /> : ''}
 
-									{project.tech.sass ? <img className='tech-icon' src={sass} alt='SASS' title='SASS' /> : ''}
+										{project.tech.css ? <img className='tech-icon' src={css} alt='CSS' title='CSS' /> : ''}
 
-									{project.tech.tailwind ? <img className='tech-icon' src={tailwind} alt='Tailwind' title='Tailwind' /> : ''}
+										{project.tech.sass ? <img className='tech-icon' src={sass} alt='SASS' title='SASS' /> : ''}
 
-									{project.tech.js ? <img className='tech-icon' src={js} alt='JavaScript' title='JavaScript' /> : ''}
+										{project.tech.tailwind ? <img className='tech-icon' src={tailwind} alt='Tailwind' title='Tailwind' /> : ''}
 
-									{project.tech.express ? <img className='tech-icon' src={express} alt='Express.js' title='Express.js' /> : ''}
+										{project.tech.js ? <img className='tech-icon' src={js} alt='JavaScript' title='JavaScript' /> : ''}
 
-									{project.tech.nextJs ? <img className='tech-icon' src={nextJs} alt='Next.js' title='Next.js' /> : ''}
+										{project.tech.express ? <img className='tech-icon' src={express} alt='Express.js' title='Express.js' /> : ''}
 
-									{project.tech.react ? <img className='tech-icon' src={react} alt='React' title='React' /> : ''}
+										{project.tech.nextJs ? <img className='tech-icon' src={nextJs} alt='Next.js' title='Next.js' /> : ''}
 
-									{project.tech.mongodb ? <img className='tech-icon' src={mongodb} alt='Mongo DB' title='Mongo DB' /> : ''}
+										{project.tech.react ? <img className='tech-icon' src={react} alt='React' title='React' /> : ''}
 
-									{project.tech.mongoose ? <img className='tech-icon' src={mongoose} alt='Mongoose' title='Mongoose' /> : ''}
+										{project.tech.mongodb ? <img className='tech-icon' src={mongodb} alt='Mongo DB' title='Mongo DB' /> : ''}
 
-									{project.tech.postgre ? <img className='tech-icon' src={postgre} alt='PostgreSQL' title='PostgreSQL' /> : ''}
-								</div>
+										{project.tech.mongoose ? <img className='tech-icon' src={mongoose} alt='Mongoose' title='Mongoose' /> : ''}
 
-								<div className='btns'>
-									<a className='btn-cta' href={project.live} target='_blank' rel='noreferrer'>
-										<img src={view} alt='View' />
-										Try it out
-									</a>
-									{project.git === '' ? (
-										''
-									) : (
-										<>
-											<span>/</span>
-											<a className='btn-cta' href={project.git} target='_blank' rel='noreferrer'>
-												View repo
-											</a>
-										</>
-									)}
+										{project.tech.postgre ? <img className='tech-icon' src={postgre} alt='PostgreSQL' title='PostgreSQL' /> : ''}
+									</div>
 								</div>
 							</div>
 						</div>

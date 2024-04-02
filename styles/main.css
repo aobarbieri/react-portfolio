@@ -330,12 +330,6 @@ header .navbar {
   .about .about-content .bio p {
     margin: 0.5rem 0;
   }
-  .about .about-content .bio .line-clamp {
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
   .about .divider {
     display: none;
   }
@@ -425,7 +419,7 @@ header .navbar {
   margin-top: 0.5rem;
 }
 .projects .projects-wrapper .description {
-  margin-top: 0.25rem;
+  margin: 0.25rem 0;
 }
 .projects .projects-wrapper .tech {
   display: flex;
@@ -483,6 +477,18 @@ header .navbar {
   .projects .projects-wrapper > div > div {
     margin: 0 auto;
     max-width: 42rem;
+  }
+  .projects .projects-wrapper > div > div .project-content-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 0;
+  }
+  .projects .projects-wrapper > div > div .project-content-bottom .tech {
+    padding: 0;
+  }
+  .projects .projects-wrapper > div > div .project-content-bottom .btns {
+    margin: 0;
   }
 }
 .skills {
@@ -545,4 +551,11 @@ header .navbar {
 
 .hidden {
   display: none;
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
