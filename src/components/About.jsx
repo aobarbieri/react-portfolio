@@ -44,12 +44,12 @@ export default function About({ about }) {
 							<span>GitHub</span>
 						</a>
 					</li>
-					{/* <li className='list-item'>
-						<a href='' target='' rel='noreferrer'>
+					<li className='list-item'>
+						<a href='mailto:amandamitzian@gmail.com' rel='noreferrer'>
 							<img src={email} alt='' />
 							<span>Email</span>
 						</a>
-					</li> */}
+					</li>
 				</ul>
 			</div>
 		</section>

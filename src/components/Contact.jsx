@@ -1,6 +1,6 @@
 import github from '/assets/brands/github.svg'
 import linkedin from '/assets/brands/linkedin.svg'
-// import email from '../assets/icons/email.svg'
+import email from '../assets/icons/email.svg'
 import resume from '/assets/icons/resume.svg'
 
 export default function Contact() {
@@ -19,12 +19,12 @@ export default function Contact() {
 						GitHub
 					</a>
 				</li>
-				{/* <li className='list-item'>
+				<li className='list-item'>
 					<a href='' target='_blank' rel='noreferrer'>
-					<img src={email} alt='' />
+						<img src={email} alt='' />
 						Email
 					</a>
-				</li> */}
+				</li>
 				<li className='list-item'>
 					<a href='https://drive.google.com/file/d/1zhjTywdUQ9HmZyuEaP6MT1hUastRY-n9/view?usp=sharing' target='_blank' rel='noreferrer'>
 						<img src={resume} alt='' />

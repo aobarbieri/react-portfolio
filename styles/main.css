@@ -297,6 +297,8 @@ header .navbar {
 @media screen and (min-width: 640px) {
   .about .about-icons li a span {
     display: block;
+    margin-left: 0.75rem;
+    font-weight: 500;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -348,10 +350,6 @@ header .navbar {
   }
   .about .about-social .about-icons .list-item:hover img {
     filter: brightness(0) saturate(100%) invert(33%) sepia(11%) saturate(1080%) hue-rotate(176deg) brightness(90%) contrast(90%);
-  }
-  .about .about-social .about-icons .list-item span {
-    margin-left: 0.75rem;
-    font-weight: 500;
   }
   .bio-mobile {
     display: none;
