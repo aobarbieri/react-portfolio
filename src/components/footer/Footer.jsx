@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import Bio from './Bio'
-import Nav from './Nav'
+import Nav from '../header/Nav'
 
 export default function Footer({ about }) {
 	return (
