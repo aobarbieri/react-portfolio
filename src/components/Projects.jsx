@@ -53,9 +53,13 @@ export default function Projects() {
 								<h4>{project.name}</h4>
 
 								<p className={`${toggle[index] ? 'line-clamp' : ''} description`}>{project.description}</p>
-								<button onClick={() => toggleDescription(index)} className={`${!toggle[index] ? 'hidden' : ''} btn-cta`}>
-									Show more
-								</button>
+								{project.description.length > 200 ? (
+									<button onClick={() => toggleDescription(index)} className={`${!toggle[index] ? 'hidden' : ''} btn-cta`}>
+										Show more
+									</button>
+								) : (
+									''
+								)}
 
 								<div className='project-content-bottom'>
 									<div className='btns'>
