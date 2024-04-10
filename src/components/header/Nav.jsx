@@ -3,7 +3,7 @@ export default function Nav() {
 		<nav className='navbar'>
 			<ul className='nav-items'>
 				<li>
-					<a href='https://drive.google.com/file/d/1zhjTywdUQ9HmZyuEaP6MT1hUastRY-n9/view?usp=sharing' target='_blank' rel='noreferrer'>
+					<a href='https://drive.google.com/file/d/18H_1qMNBN2m6iHeO3amOJ9nuGU_somfC/view?usp=sharing' target='_blank' rel='noreferrer'>
 						Resume
 					</a>
 				</li>

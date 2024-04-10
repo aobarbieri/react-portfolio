@@ -13,13 +13,13 @@ Hello there! I'm a Full Stack Web Developer who excels in handling intricate lay
 
 ## Attributions
 
-Pink svg at the top of the page provided by loading.io - https://loading.io/icon/
-Skills icons provided by Devicon - https://devicon.dev/
+-   Pink svg at the top of the page provided by loading.io - https://loading.io/icon/
+-   Skills' icons provided by Devicon - https://devicon.dev/
 
 ## Future features
 
 -   Enhance project descriptions.
 
-## App Diagram
+## App diagram
 
 ![](./public/assets/images/project-diagram.png)
